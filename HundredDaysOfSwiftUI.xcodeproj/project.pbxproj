@@ -44,6 +44,7 @@
 		F97ED3AB27F2D2490033C15C /* HundredDaysOfSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HundredDaysOfSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97ED3AF27F2D2490033C15C /* HundredDaysOfSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F97ED3BF27F2DB6E0033C15C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		F97ED38827F2D2470033C15C = {
 			isa = PBXGroup;
 			children = (
+				F97ED3BF27F2DB6E0033C15C /* Playground.playground */,
 				F97ED39327F2D2470033C15C /* HundredDaysOfSwiftUI */,
 				F97ED3A427F2D2490033C15C /* HundredDaysOfSwiftUITests */,
 				F97ED3AE27F2D2490033C15C /* HundredDaysOfSwiftUIUITests */,
