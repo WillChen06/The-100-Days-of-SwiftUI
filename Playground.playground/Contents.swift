@@ -1,35 +1,92 @@
 import Cocoa
 
-// Bool
-let goodDogs = true
-var gamOver = false
-print(gamOver)
-gamOver.toggle()
-print(gamOver)
-let isMultiple = 120.isMultiple(of: 3)
+// Array
+var beatles = ["John", "Paul", "George", "Ringo"]
+beatles.append("Adrian")
+beatles.append("Allen")
 
-var isAuthenticated = false
-isAuthenticated = !isAuthenticated
-print(isAuthenticated)
+let numbers = [4, 8, 15, 16, 23, 42]
+var temperatures = [25.3, 28.2, 26.4]
 
-isAuthenticated = !isAuthenticated
-print(isAuthenticated)
+print(beatles[0])
+print(numbers[1])
+print(temperatures[2])
 
-// Join strings together
-let firstPart = "Hello, "
-let secondPart = "World"
-let greeting = firstPart + secondPart
+var scores = Array<Int>()
+scores.append(100)
+scores.append(80)
+scores.append(85)
+print(scores[1])
 
-let people = "Haters"
-let action = "hate"
-let lyric = people + "gonna" + action
+var albums = ["Folklore"]
+albums.append("Fearless")
+albums.append("Red")
+print(albums.count)
 
-let name = "Taylor"
-let age = 26
-let message = "Hello, my name is \(name) and I'm \(age) years old."
-print(message)
+var characters = ["Lana", "Pam", "Ray", "Sterling"]
+print(characters.count)
 
-let number = 11
-let missionMessage = "Apollo" + String(number) + " landed on the moon"
+characters.remove(at: 2)
+print(characters.count)
 
-print("5 x 5 is \(5*5)")
+characters.removeAll()
+print(characters.count)
+
+let bondMovies = ["Casino Royale", "Spectre", "No Time to Die"]
+print(bondMovies.contains("Frozen"))
+
+let cities = ["London", "Tokyo", "Rome", "Budapest"]
+print(cities.sorted())
+
+let presidents = ["Bush", "Obama", "Trump", "Biden"]
+let reversedPresidents = presidents.reversed()
+print(reversedPresidents)
+
+// Dictionary
+let employee = ["name": "Taylor Swift", "job": "Singer", "location": "Nashville"]
+
+print(employee["name", default: "Unknown"])
+print(employee["job", default: "Unknown"])
+print(employee["location", default: "Unknown"])
+
+let hasGraduated = [
+    "Eric": false,
+    "Maeve": true,
+    "Otis": false
+]
+
+let olympics = [
+    2012: "London",
+    2016: "Rio de Janeiro",
+    2021: "Tokyo"
+]
+
+print(olympics[2012, default: "Unknown"])
+
+var heights = [String: Int]()
+heights["Yao Ming"] = 229
+heights["Shaquille O'Neal"] = 216
+heights["LeBron James"] = 206
+
+var archEnemies = [String: String]()
+archEnemies["Batman"] = "The Joker"
+archEnemies["Superman"] = "Lex Luthor"
+archEnemies["Batman"] = "Penguin"
+
+// Set
+var actors = Set<String>()
+actors.insert("Denzel Washington")
+actors.insert("Tom Cruise")
+actors.insert("Nicolas Cage")
+actors.insert("Samuel L Jackson")
+print(actors)
+
+// Enum
+
+enum Weekday {
+    case monday, tuesday, wednesday, thursday, friday
+}
+
+var day = Weekday.monday
+day = .tuesday
+day = .friday
