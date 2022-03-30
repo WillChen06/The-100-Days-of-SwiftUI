@@ -1,83 +1,35 @@
 import Cocoa
 
-// Variables & Constants
-var greeting = "Hello, playground"
+// Bool
+let goodDogs = true
+var gamOver = false
+print(gamOver)
+gamOver.toggle()
+print(gamOver)
+let isMultiple = 120.isMultiple(of: 3)
 
-var name  = "Ted"
-name = "Rebecca"
-name = "Keeley"
+var isAuthenticated = false
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
 
-let character = "Daphne"
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
 
-var playerName = "Roy"
-print(playerName)
+// Join strings together
+let firstPart = "Hello, "
+let secondPart = "World"
+let greeting = firstPart + secondPart
 
-playerName = "Dani"
-print(playerName)
+let people = "Haters"
+let action = "hate"
+let lyric = people + "gonna" + action
 
-playerName = "Sam"
-print(playerName)
+let name = "Taylor"
+let age = 26
+let message = "Hello, my name is \(name) and I'm \(age) years old."
+print(message)
 
-let managerName = "Michael Scott"
-let dogBreed = "Samoyed"
-let meaningOfLife = "How many roads must a man walk down?"
+let number = 11
+let missionMessage = "Apollo" + String(number) + " landed on the moon"
 
-// Strings
-let actor = "Denzel Washington"
-let fileName = "paris.jpg"
-let result = "⭐️ You win! ⭐️"
-
-let quote = "Then he tapped a sign saying \"Believe\" and walked away."
-
-let move = """
-A day in
-the life of an
-Apple engineer
-"""
-
-let nameLength = actor.count
-print(nameLength)
-
-print(result.uppercased())
-
-print(move.hasPrefix("A day"))
-
-print(fileName.hasSuffix(".jpg"))
-
-// Numbers
-
-let score = 10
-let reallyBig = 1_00_000_000 // ignore underscores
-
-let lowerScore = score - 2
-let higherScore = score + 10
-let dounleScore = score * 2
-let squaredScore = score * score
-let halvedScore = score / 2
-
-var counter = 10
-counter += 5
-print(counter)
-
-counter *= 2
-counter -= 10
-counter /= 2
-
-let number = 120
-print(number.isMultiple(of: 3))
-print(120.isMultiple(of: 3))
-
-// Decimal numbers
-
-let num = 0.1 + 0.2
-print(num)
-
-let a = 1
-let b = 2.0
-let c = Double(a) + b
-
-let double1 = 3.1
-let double2 = 3131.3131
-let double3 = 3.0
-let int1 = 3
-
+print("5 x 5 is \(5*5)")
