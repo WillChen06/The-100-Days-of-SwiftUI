@@ -1,153 +1,112 @@
 import Cocoa
 
-// if
-let score = 85
-if score > 80 {
-    print("Great job!")
+// For loop
+let platforms = ["iOS", "macOS", "tvOS", "watchOS"]
+
+for os in platforms {
+    print("Swift works great on \(os)")
 }
 
-let speed = 88
-let percentage = 85
-let age = 10
-if speed >= 88 {
-    print("Where we're going, we don't need roads.")
+for i in 1...12 {
+    print("The \(i) times table")
+    
+    for j in 1...12 {
+        print("    \(j) * \(i) is \(j * i)")
+    }
+    print()
 }
 
-if percentage < 85 {
-    print("Sorry, you fail the test.")
+for i in 1...5 {
+    print("Counting from 1 through 5: \(i)")
 }
 
-if age >= 10 {
-    print("You're eligible to vote.")
+for i in 1..<5 {
+    print("Counting from 1 up to 5: \(i)")
 }
 
-let outName = "Dave Lister"
-let friendName = "Arnoid Rimer"
+var lyric = "Haters gonna"
+for _ in 1...5 {
+    lyric += "hate"
+}
+print(lyric)
 
-if outName < friendName {
-    print("It's \(outName) vs \(friendName)")
+let names = ["a", "b", "c", "d"]
+print(names[1...]) // ["b", "c", "d"]
+
+// While
+var countdown = 10
+
+while countdown > 0 {
+    print("\(countdown)")
+    countdown -= 1
 }
 
-if outName > friendName {
-    print("It's \(friendName) vs \(outName)")
+print("Blast off!")
+let id = Int.random(in: 1...1000)
+let amount = Double.random(in: 0...1)
+
+var roll = 0
+
+while roll != 20 {
+    roll = Int.random(in: 1...20)
+    print("I rolled a \(roll)")
+}
+print("Critical hit!")
+
+var number: Int = 10
+while number > 0 {
+    number -= 2
+    if number % 2 == 0 {
+        print("\(number) is an even number.")
+    }
 }
 
-var numbers = [1, 2, 3]
-numbers.append(4)
+// Break & Continue
+let filenames = ["me.jpg", "work.txt", "sophie.jpg"]
 
-if numbers.count > 3 {
-    numbers.remove(at: 0)
-}
-print(numbers)
-
-let country = "Canada"
-if country == "Australia" {
-    print("G'day!")
+for filename in filenames {
+    if filename.hasSuffix(".jpg") == false {
+        continue
+    }
+    print("Found picture \(filename)")
 }
 
-enum Sizes: Comparable {
-    case small
-    case medium
-    case large
+let number1 = 4
+let number2 = 14
+var multiples = [Int]()
+
+for i in 1...100_100 {
+    if i.isMultiple(of: number1) && i.isMultiple(of: number2) {
+        multiples.append(i)
+        
+        if multiples.count == 10 {
+            break
+        }
+    }
 }
 
-let first = Sizes.small
-let second = Sizes.large
-print(first < second)
+print(multiples)
 
-// Multiple conditions
-let temp = 25
-if temp > 20 && temp < 30 {
-    print("It's a nice day.")
+// Checkpoints
+/*
+ The problem is called fizz buzz, and has been used in job interviews, university entrance tests, and more for as long as I can remember. Your goal is to loop from 1 through 100, and for each number:
+
+ If it’s a multiple of 3, print “Fizz”
+ If it’s a multiple of 5, print “Buzz”
+ If it’s a multiple of 3 and 5, print “FizzBuzz”
+ Otherwise, just print the number.
+ */
+
+let nums: [Int] = Array(1...100)
+for num in nums {
+    switch true {
+    case num.isMultiple(of: 15):
+        print("\(num) should print \"FizzBuzz\"")
+    case num.isMultiple(of: 3):
+        print("\(num) should print \"Fizz\"")
+    case num.isMultiple(of: 5):
+        print("\(num) should print \"Buzz\"")
+    default:
+        print("\(num) should print \"\(num)\"")
+    }
 }
-
-let userAge = 14
-let hasParentalConsent = true
-
-if userAge >= 10 || hasParentalConsent == true {
-    print("You can buy the game!")
-}
-
-enum TransportOption {
-    case airplane, helicopter, bicycle, car, escooter
-}
-
-let transport = TransportOption.airplane
-if transport == .airplane || transport == .helicopter {
-    print("Let's fly!")
-} else if transport == .bicycle {
-    print("I hope there's a bike path.")
-} else if transport == .car {
-    print("Time to get stuck in traffic.")
-} else {
-    print("I'm going to hire a scooter now!")
-}
-
-// Switch
-
-enum Weather {
-    case sun, rain, wind, snow, unknown
-}
-
-let forecast = Weather.sun
-
-switch forecast {
-case .sun:
-    print("It should be a nice day.")
-case .rain:
-    print("Pack an umbrella.")
-case .wind:
-    print("Wear something warm.")
-case .snow:
-    print("School is cancelled.")
-case .unknown:
-    print("Our forecast generator is broken!")
-}
-
-let place = "Metropolis"
-switch place {
-case "Gotham":
-    print("You're Baman!")
-case "Mega-City One":
-    print("You're Black Panther!")
-case "Wakanda":
-    print("You're Black Panther!")
-default:
-    print("Who are you?")
-}
-
-let day = 5
-print("My true love gava to me...")
-
-switch day {
-case 5:
-    print("5 golden rings")
-case 4:
-    print("4 calling birds")
-case 3:
-    print("3 French hens")
-case 2:
-    print("2 turtle doves")
-default:
-    print("A partridge in a pear tree")
-}
-
-// Ternary conditional operator
-let canVote = age >= 18 ? "Yes" : "No"
-print(canVote)
-
-let hour = 23
-print(hour < 12 ? "It's before noon" : "It's after noon")
-
-let names = ["Jayne", "Kaylee", "Mal"]
-let crewCount = names.isEmpty ? "No one" : "\(names.count) people"
-print(crewCount)
-
-enum Theme {
-    case light, dark
-}
-
-let theme = Theme.dark
-
-let background = theme == .dark ? "balck" : white
-print(background)
