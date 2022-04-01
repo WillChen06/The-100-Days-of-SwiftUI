@@ -1,112 +1,90 @@
 import Cocoa
 
-// For loop
-let platforms = ["iOS", "macOS", "tvOS", "watchOS"]
-
-for os in platforms {
-    print("Swift works great on \(os)")
+// Function
+func showWelcome() {
+    print("Welcome to my app!")
+    print("By default This prints out a conversion")
+    print("chart from centimeters to inches, but you")
+    print("can also set a custom range if you want")
 }
 
-for i in 1...12 {
-    print("The \(i) times table")
-    
-    for j in 1...12 {
-        print("    \(j) * \(i) is \(j * i)")
-    }
-    print()
+showWelcome()
+
+let number = 139
+if number.isMultiple(of: 2) {
+    print("Even")
+} else {
+    print("Odd")
 }
 
-for i in 1...5 {
-    print("Counting from 1 through 5: \(i)")
-}
 
-for i in 1..<5 {
-    print("Counting from 1 up to 5: \(i)")
-}
+let roll = Int.random(in: 1...20)
 
-var lyric = "Haters gonna"
-for _ in 1...5 {
-    lyric += "hate"
-}
-print(lyric)
-
-let names = ["a", "b", "c", "d"]
-print(names[1...]) // ["b", "c", "d"]
-
-// While
-var countdown = 10
-
-while countdown > 0 {
-    print("\(countdown)")
-    countdown -= 1
-}
-
-print("Blast off!")
-let id = Int.random(in: 1...1000)
-let amount = Double.random(in: 0...1)
-
-var roll = 0
-
-while roll != 20 {
-    roll = Int.random(in: 1...20)
-    print("I rolled a \(roll)")
-}
-print("Critical hit!")
-
-var number: Int = 10
-while number > 0 {
-    number -= 2
-    if number % 2 == 0 {
-        print("\(number) is an even number.")
+func printTimesTables(number: Int, end: Int) {
+    for i in 1...end {
+        print("\(i) * \(number) is \(i * number)")
     }
 }
 
-// Break & Continue
-let filenames = ["me.jpg", "work.txt", "sophie.jpg"]
+printTimesTables(number: 5, end: 20)
 
-for filename in filenames {
-    if filename.hasSuffix(".jpg") == false {
-        continue
-    }
-    print("Found picture \(filename)")
+// Function - return values
+let root = sqrt(169)
+print(root)
+
+func rollDice() -> Int {
+    Int.random(in: 1...6)
 }
 
-let number1 = 4
-let number2 = 14
-var multiples = [Int]()
+let result = rollDice()
+print(result)
 
-for i in 1...100_100 {
-    if i.isMultiple(of: number1) && i.isMultiple(of: number2) {
-        multiples.append(i)
-        
-        if multiples.count == 10 {
-            break
-        }
+func areLettersIdentical(a: String, b: String) -> Bool {
+    a.sorted() == b.sorted()
+}
+
+func pythagoras(a: Double, b: Double) -> Double {
+    sqrt(a * a + b * b)
+}
+
+let c = pythagoras(a: 3, b: 4)
+print(c)
+
+// Function - return multiple values
+func getUser() -> (firstName: String, lastName: String) {
+    (firstName: "Taylor", lastName: "Swift")
+}
+
+let (firstName, _) = getUser()
+print("Name: \(firstName)")
+
+// Customize parameter labels
+
+let lyric = "I seaa a red door and I want it painted black."
+print(lyric.hasPrefix("I see"))
+
+
+func isUppercase(_ string: String) -> Bool {
+    string == string.uppercased()
+}
+
+let string = "HELLO, WORLD"
+let result2 = isUppercase(string)
+
+func printTimesTable(for number: Int) {
+    for i in 1...12 {
+        print("\(i) x \(number) is \(i * number)")
     }
 }
 
-print(multiples)
+printTimesTable(for: 5)
 
-// Checkpoints
-/*
- The problem is called fizz buzz, and has been used in job interviews, university entrance tests, and more for as long as I can remember. Your goal is to loop from 1 through 100, and for each number:
-
- If it’s a multiple of 3, print “Fizz”
- If it’s a multiple of 5, print “Buzz”
- If it’s a multiple of 3 and 5, print “FizzBuzz”
- Otherwise, just print the number.
- */
-
-let nums: [Int] = Array(1...100)
-for num in nums {
-    switch true {
-    case num.isMultiple(of: 15):
-        print("\(num) should print \"FizzBuzz\"")
-    case num.isMultiple(of: 3):
-        print("\(num) should print \"Fizz\"")
-    case num.isMultiple(of: 5):
-        print("\(num) should print \"Buzz\"")
-    default:
-        print("\(num) should print \"\(num)\"")
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
     }
+    return total / Double(numbers.count)
 }
+
+arithmeticMean(3, 4)
