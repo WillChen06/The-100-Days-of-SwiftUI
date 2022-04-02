@@ -1,90 +1,71 @@
 import Cocoa
 
-// Function
-func showWelcome() {
-    print("Welcome to my app!")
-    print("By default This prints out a conversion")
-    print("chart from centimeters to inches, but you")
-    print("can also set a custom range if you want")
-}
-
-showWelcome()
-
-let number = 139
-if number.isMultiple(of: 2) {
-    print("Even")
-} else {
-    print("Odd")
-}
-
-
-let roll = Int.random(in: 1...20)
-
-func printTimesTables(number: Int, end: Int) {
+// Function - default values
+func printTimesTable(for number: Int, end: Int = 12) {
     for i in 1...end {
-        print("\(i) * \(number) is \(i * number)")
-    }
-}
-
-printTimesTables(number: 5, end: 20)
-
-// Function - return values
-let root = sqrt(169)
-print(root)
-
-func rollDice() -> Int {
-    Int.random(in: 1...6)
-}
-
-let result = rollDice()
-print(result)
-
-func areLettersIdentical(a: String, b: String) -> Bool {
-    a.sorted() == b.sorted()
-}
-
-func pythagoras(a: Double, b: Double) -> Double {
-    sqrt(a * a + b * b)
-}
-
-let c = pythagoras(a: 3, b: 4)
-print(c)
-
-// Function - return multiple values
-func getUser() -> (firstName: String, lastName: String) {
-    (firstName: "Taylor", lastName: "Swift")
-}
-
-let (firstName, _) = getUser()
-print("Name: \(firstName)")
-
-// Customize parameter labels
-
-let lyric = "I seaa a red door and I want it painted black."
-print(lyric.hasPrefix("I see"))
-
-
-func isUppercase(_ string: String) -> Bool {
-    string == string.uppercased()
-}
-
-let string = "HELLO, WORLD"
-let result2 = isUppercase(string)
-
-func printTimesTable(for number: Int) {
-    for i in 1...12 {
         print("\(i) x \(number) is \(i * number)")
     }
 }
 
-printTimesTable(for: 5)
+printTimesTable(for: 5, end: 20)
+printTimesTable(for: 8)
 
-func arithmeticMean(_ numbers: Double...) -> Double {
-    var total: Double = 0
-    for number in numbers {
-        total += number
-    }
-    return total / Double(numbers.count)
+var characters = ["Lana", "Pam", "Ray", "Sterling"]
+print(characters.count)
+characters.removeAll(keepingCapacity: true)
+print(characters.count)
+
+// Function - handle erros
+enum PasswordError: Error {
+    case short, obvious
 }
 
-arithmeticMean(3, 4)
+func checkPassword(_ password: String) throws -> String {
+    if password.count < 5 { throw PasswordError.short }
+    if password == "12345" { throw PasswordError.obvious }
+    
+    if password.count < 8 {
+        return "OK"
+    } else if password.count < 10 {
+        return "Good"
+    } else {
+        return "Excellent"
+    }
+}
+
+let string = "12345"
+
+do {
+    let result = try checkPassword(string)
+    print("Password rating: \(result)")
+} catch PasswordError.short {
+    print("Please use a longer password.")
+} catch PasswordError.obvious {
+    print("I have the same combination on my luggage!")
+} catch {
+    print("There was an error: \(error.localizedDescription)")
+}
+
+// Checkpoint 4
+enum SquareError: Error {
+    case outOfBounds
+    case noRoot
+}
+
+func getSquareRoot(number: Int) throws -> Int {
+    guard number >= 1 && number <= 10_000 else { throw SquareError.outOfBounds }
+    var result: Int?
+    for i in 1...100 {
+        if i * i == number {
+            result = i
+            break
+        }
+    }
+    if let result = result {
+        return result
+    } else {
+        throw SquareError.noRoot
+    }
+}
+
+
