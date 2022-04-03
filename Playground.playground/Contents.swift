@@ -1,71 +1,118 @@
 import Cocoa
 
-// Function - default values
-func printTimesTable(for number: Int, end: Int = 12) {
-    for i in 1...end {
-        print("\(i) x \(number) is \(i * number)")
+// Closures
+func greetUser() {
+    print("Hi there!")
+}
+
+let sayHello = { (name: String) -> String in
+    "Hi \(name)!"
+}
+
+sayHello("Talyor")
+
+var greetCopy: () -> Void = greetUser
+
+func getUserData(for id: Int) -> String {
+    if id == 1989 {
+        return "TaylorSwift"
+    } else {
+        return "Anonymous"
     }
 }
 
-printTimesTable(for: 5, end: 20)
-printTimesTable(for: 8)
+let data: (Int) -> String = getUserData
+let user = data(1989)
+print(user)
 
-var characters = ["Lana", "Pam", "Ray", "Sterling"]
-print(characters.count)
-characters.removeAll(keepingCapacity: true)
-print(characters.count)
+let team = ["Gloria", "Suzanne", "Piper", "Tinfinny", "Tasha"]
+let sortedTeam = team.sorted()
+print(sortedTeam)
 
-// Function - handle erros
-enum PasswordError: Error {
-    case short, obvious
+func captainFirstSorted(name1: String, name2: String) -> Bool {
+    if name1 == "Suzanne" {
+        return true
+    } else if name2 == "Suzanne"{
+        return false
+    }
+    return name1 < name2
 }
 
-func checkPassword(_ password: String) throws -> String {
-    if password.count < 5 { throw PasswordError.short }
-    if password == "12345" { throw PasswordError.obvious }
+//let captainFirstTeam = team.sorted(by: captainFirstSorted)
+//print(captainFirstTeam)
+
+let captainFirstTeam = team.sorted(by: { (name1: String, name2: String) -> Bool in
+    if name1 == "Suzanne" {
+        return true
+    } else if name2 == "Suzanne"{
+        return false
+    }
+    return name1 < name2
+})
+
+print(captainFirstTeam)
+
+// Trailing closures and shorthand syntax
+
+let sorted = team.sorted {
+    if $0 == "Suzanne" {
+        return true
+    } else if $1 == "Suzanne"{
+        return false
+    }
+    return $0 < $1
+}
+
+let reverseTeam = team.sorted { $0 > $1 }
+
+let tOnly = team.filter { $0.hasPrefix("T") }
+print(tOnly)
+
+let uppercaseTeam = team.map { $0.uppercased() }
+print(uppercaseTeam)
+
+// Function as parameters
+func makeArray(size: Int, using generator: () -> Int) -> [Int] {
+    var numbers = [Int]()
     
-    if password.count < 8 {
-        return "OK"
-    } else if password.count < 10 {
-        return "Good"
-    } else {
-        return "Excellent"
+    for _ in 0..<size {
+        let newNumber = generator()
+        numbers.append(newNumber)
+    }
+    return numbers
+}
+func generateNumber() -> Int {
+    Int.random(in: 1...20)
+}
+let newRolls = makeArray(size: 50, using: generateNumber)
+print(newRolls)
+
+func doImportantWork(first: () -> Void, second: ()-> Void, third: () -> Void) {
+    print("About to start first work")
+    first()
+    print("About to start second work")
+    second()
+    print("About to start third work")
+    third()
+    print("Done!")
+}
+
+doImportantWork {
+    print("This is the first work")
+} second: {
+    print("This is the second work")
+} third: {
+    print("This is the third work")
+}
+
+// Checkpoint 5
+let luckyNumbers = [7, 4, 38, 21, 16, 15, 12, 33, 31, 49]
+
+let output = { (luckyNumbers: [Int]) -> Void in
+    let numbers = luckyNumbers.filter { !$0.isMultiple(of: 2) }.sorted { $0 < $1 }.map { "\($0) is a lucky number" }
+    for num in numbers {
+        print(num)
     }
 }
 
-let string = "12345"
-
-do {
-    let result = try checkPassword(string)
-    print("Password rating: \(result)")
-} catch PasswordError.short {
-    print("Please use a longer password.")
-} catch PasswordError.obvious {
-    print("I have the same combination on my luggage!")
-} catch {
-    print("There was an error: \(error.localizedDescription)")
-}
-
-// Checkpoint 4
-enum SquareError: Error {
-    case outOfBounds
-    case noRoot
-}
-
-func getSquareRoot(number: Int) throws -> Int {
-    guard number >= 1 && number <= 10_000 else { throw SquareError.outOfBounds }
-    var result: Int?
-    for i in 1...100 {
-        if i * i == number {
-            result = i
-            break
-        }
-    }
-    if let result = result {
-        return result
-    } else {
-        throw SquareError.noRoot
-    }
-}
-
-
+output(luckyNumbers)
