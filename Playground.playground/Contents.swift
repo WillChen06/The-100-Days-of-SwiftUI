@@ -1,88 +1,190 @@
 import Cocoa
 
-// Access control
+// Classes
 
-/*
- Use private for “don’t let anything outside the struct use this.”
- Use fileprivate for “don’t let anything outside the current file use this.”
- Use public for “let anyone, anywhere use this.”
- */
-struct BankAccount {
-    private(set) var funds = 0
-    
-    mutating func deposit(amount: Int) {
-        funds += amount
-    }
-    
-    mutating func withdraw(amount: Int) -> Bool {
-        if funds > amount {
-            funds -= amount
-            return true
-        } else {
-            return false
+class Game {
+    var score = 0 {
+        didSet {
+            print("Score is now \(score)")
         }
     }
 }
 
-var account = BankAccount()
-account.deposit(amount: 100)
+var newGame = Game()
+newGame.score += 10
 
-let success = account.withdraw(amount: 200)
+// Class inherit
 
-if success {
-    print("Withdrew money successfully")
-} else {
-    print("Failed to get the money")
-}
-
-// Static properties and methods
-
-/*
- self -> The current value of a struct
- Self -> The current type of struct
-*/
-struct School {
-    static var studentCount = 0
+class Employee {
+    let hours: Int
     
-    static func add(student: String) {
-        print("\(student) joined the school.")
-        studentCount += 1
+    init(hours: Int) {
+        self.hours = hours
+    }
+    
+    func printSummary() {
+        print("I work \(hours) hours a day.")
     }
 }
 
-School.add(student: "Taylor Swift")
-print(School.studentCount)
-
-struct AppData {
-    static let version = "1.3 beta 2"
-    static let saveFilename = "settings.json"
-    static let homeURL = "https://ww.hackingwithswift.com"
-}
-
-struct Employee {
-    let username: String
-    let password: String
-    
-    static let exmaple = Employee(username: "cfederighi", password: "idjqijweeqw")
-}
-
-// Checkpoint 6
-struct Car {
-    enum GearError: Error {
-        case invalidGear
+final class Developer: Employee {
+    func work() {
+        print("I'm writing code for \(hours) hours.")
     }
-    let model: String
-    let seats: Int
-    private(set) var gear: Int = 1
     
-    mutating func changeGears(to grear: Int) throws {
-        guard grear > 0 && grear <= 10 else {
-            throw GearError.invalidGear
-        }
-        self.gear = grear
+    override func printSummary() {
+        print("I'm developer who will sometimes work \(hours) hours a day, but other times will spend hours arguing about whether code should be indented using tabs or spaces.")
     }
 }
 
-var car1 = Car(model: "Benz", seats: 2)
-try car1.changeGears(to: 2)
-car1.gear
+class Manager: Employee {
+    func work() {
+        print("I'm going to meetings for \(hours) hours.")
+    }
+}
+
+let robert = Developer(hours: 8)
+let joseph = Manager(hours: 10)
+
+robert.work()
+joseph.work()
+
+// Initializer
+class Vehicle {
+    let isElectric: Bool
+    init(isElectric: Bool) {
+        self.isElectric = isElectric
+    }
+}
+
+class Car: Vehicle {
+    let isConvertible = false
+}
+
+let teslaX = Car(isElectric: true)
+
+// Copy classes
+class User {
+    var username = "Anonymous"
+    
+    func copy() -> User {
+        let user = User()
+        user.username = username
+        return user
+    }
+}
+
+var user1 = User()
+var user2 = user1.copy()
+user2.username = "Taylor"
+
+print(user1.username)
+print(user2.username)
+
+// Deinitializer
+
+class Person {
+    let id: Int
+    
+    init(id: Int) {
+        self.id = id
+        print("User \(id): I'm alive!")
+    }
+    
+    deinit {
+        print("User \(id): I'm dead!")
+    }
+}
+
+var people = [Person]()
+
+for i in 1...3 {
+    let person = Person(id: i)
+    print("User \(person.id): I'm in control!")
+    people.append(person)
+}
+
+print("Loop is finish!")
+people.removeAll()
+print("Remove all!")
+
+// Variables in classes
+
+class User2 {
+    var name = "Paul"
+}
+
+var user3 = User2()
+user3.name = "Taylor"
+user3 = User2()
+print(user3.name)
+
+// Checkpoint 7
+class Animal {
+    let legs: Int
+    
+    init(legs: Int = 4) {
+        self.legs = legs
+    }
+}
+
+class Dog: Animal {
+    func speak() {
+        print("Dog barking.")
+    }
+}
+
+class Corgi: Dog {
+    override func speak() {
+        print("Corgi barking.")
+    }
+}
+
+class Poodle: Dog {
+    override func speak() {
+        print("Poddle barking.")
+    }
+}
+
+class Cat: Animal {
+    let isTame: Bool
+    
+    init(isTame: Bool) {
+        self.isTame = isTame
+        super.init(legs: 4)
+    }
+    
+    func speak() {
+        print("Cat meow.")
+    }
+}
+
+class Perisan: Cat {
+    override func speak() {
+        print("Perisan meow.")
+    }
+}
+
+class Lion: Cat {
+    override func speak() {
+        print("Lion roaring.")
+    }
+}
+
+let dog = Dog(legs: 4)
+dog.speak()
+
+let corgi = Corgi()
+corgi.speak()
+
+let poodle = Poodle()
+poodle.speak()
+
+let cat = Cat(isTame: false)
+cat.speak()
+
+let persian = Perisan(isTame: true)
+persian.speak()
+
+let lion = Lion(isTame: false)
+lion.speak()
