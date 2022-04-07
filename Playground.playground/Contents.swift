@@ -1,190 +1,186 @@
 import Cocoa
 
-// Classes
+// Protocol
 
-class Game {
-    var score = 0 {
-        didSet {
-            print("Score is now \(score)")
-        }
-    }
+protocol Vehicle {
+    var name: String { get }
+    var currentPassengers: Int { get set }
+    func estimateTime(for distance: Int) -> Int
+    func travel(distance: Int)
 }
 
-var newGame = Game()
-newGame.score += 10
-
-// Class inherit
-
-class Employee {
-    let hours: Int
+struct Car: Vehicle {
+    let name: String = "Car"
+    var currentPassengers: Int = 1
     
-    init(hours: Int) {
-        self.hours = hours
+    
+    func estimateTime(for distance: Int) -> Int {
+        distance / 50
     }
     
-    func printSummary() {
-        print("I work \(hours) hours a day.")
-    }
-}
-
-final class Developer: Employee {
-    func work() {
-        print("I'm writing code for \(hours) hours.")
+    func travel(distance: Int) {
+        print("I'm driving \(distance)km")
     }
     
-    override func printSummary() {
-        print("I'm developer who will sometimes work \(hours) hours a day, but other times will spend hours arguing about whether code should be indented using tabs or spaces.")
+    func openSunroof() {
+        print("It's a nice day!")
     }
 }
 
-class Manager: Employee {
-    func work() {
-        print("I'm going to meetings for \(hours) hours.")
-    }
-}
-
-let robert = Developer(hours: 8)
-let joseph = Manager(hours: 10)
-
-robert.work()
-joseph.work()
-
-// Initializer
-class Vehicle {
-    let isElectric: Bool
-    init(isElectric: Bool) {
-        self.isElectric = isElectric
-    }
-}
-
-class Car: Vehicle {
-    let isConvertible = false
-}
-
-let teslaX = Car(isElectric: true)
-
-// Copy classes
-class User {
-    var username = "Anonymous"
+struct Bicycle: Vehicle {
+    let name: String = "Bicycle"
+    var currentPassengers: Int = 1
     
-    func copy() -> User {
-        let user = User()
-        user.username = username
-        return user
-    }
-}
-
-var user1 = User()
-var user2 = user1.copy()
-user2.username = "Taylor"
-
-print(user1.username)
-print(user2.username)
-
-// Deinitializer
-
-class Person {
-    let id: Int
-    
-    init(id: Int) {
-        self.id = id
-        print("User \(id): I'm alive!")
+    func estimateTime(for distance: Int) -> Int {
+        distance / 10
     }
     
-    deinit {
-        print("User \(id): I'm dead!")
+    func travel(distance: Int) {
+        print("I'm cycling \(distance)km")
     }
 }
 
-var people = [Person]()
-
-for i in 1...3 {
-    let person = Person(id: i)
-    print("User \(person.id): I'm in control!")
-    people.append(person)
-}
-
-print("Loop is finish!")
-people.removeAll()
-print("Remove all!")
-
-// Variables in classes
-
-class User2 {
-    var name = "Paul"
-}
-
-var user3 = User2()
-user3.name = "Taylor"
-user3 = User2()
-print(user3.name)
-
-// Checkpoint 7
-class Animal {
-    let legs: Int
-    
-    init(legs: Int = 4) {
-        self.legs = legs
+func commute(distance: Int, using vehicle: Vehicle) {
+    if vehicle.estimateTime(for: distance) > 100 {
+        print("That's too slow! I'll try a different vehicle.")
+    } else {
+        vehicle.travel(distance: distance)
     }
 }
 
-class Dog: Animal {
-    func speak() {
-        print("Dog barking.")
+func getTravelEstimates(using vehicles: [Vehicle], distance: Int) {
+    for vehicle in vehicles {
+        let estimate = vehicle.estimateTime(for: distance)
+        print("\(vehicle.name): \(estimate) hours to travel \(distance)km")
     }
 }
 
-class Corgi: Dog {
-    override func speak() {
-        print("Corgi barking.")
-    }
+let car = Car()
+commute(distance: 100, using: car)
+
+let bike = Bicycle()
+commute(distance: 50, using: bike)
+
+getTravelEstimates(using: [car, bike], distance: 150)
+
+// Opaque return types
+
+func getRandomNumber() -> some Equatable {
+    Double.random(in: 1...6)
 }
 
-class Poodle: Dog {
-    override func speak() {
-        print("Poddle barking.")
-    }
+func getRandomBool() -> some Equatable {
+    Bool.random()
 }
 
-class Cat: Animal {
-    let isTame: Bool
-    
-    init(isTame: Bool) {
-        self.isTame = isTame
-        super.init(legs: 4)
+print(getRandomNumber() == getRandomNumber())
+
+// Extension
+
+
+extension String {
+    func trimmed() -> String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    func speak() {
-        print("Cat meow.")
+    mutating func trim() {
+        self = trimmed()
+    }
+    
+    var lines: [String] {
+        self.components(separatedBy: .newlines)
     }
 }
 
-class Perisan: Cat {
-    override func speak() {
-        print("Perisan meow.")
+var quote = "    The truth is rarely pure and never simple    "
+quote.trim()
+
+let lyrics = """
+But I keep cruising
+Can't stop, won't stop moving
+It's like I got this music in my mind
+Saying it's gonna be alright
+"""
+
+print(lyrics.lines.count)
+
+struct Book {
+    let title: String
+    let pageCount: Int
+    let readingHours: Int
+
+}
+
+extension Book {
+    init(title: String, pageCount: Int) {
+        self.title = title
+        self.pageCount = pageCount
+        self.readingHours = pageCount / 50
     }
 }
 
-class Lion: Cat {
-    override func speak() {
-        print("Lion roaring.")
+let lotr = Book(title: "Load of the Rings", pageCount: 1178, readingHours: 24)
+
+// Protocol extension
+extension Collection {
+    var isNotEmpty: Bool {
+        isEmpty == false
     }
 }
 
-let dog = Dog(legs: 4)
-dog.speak()
+let guests = ["Mario", "Luigi", "Peach"]
+if guests.isNotEmpty {
+    print("Guest count: \(guests.count)")
+}
 
-let corgi = Corgi()
-corgi.speak()
+protocol Person {
+    var name: String { get }
+    func sayHello()
+}
 
-let poodle = Poodle()
-poodle.speak()
+extension Person {
+    func sayHello() {
+        print("Hi, I'm \(name)")
+    }
+}
 
-let cat = Cat(isTame: false)
-cat.speak()
+struct Employee: Person {
+    let name: String
+}
 
-let persian = Perisan(isTame: true)
-persian.speak()
+let talyor = Employee(name: "Talyor Swift")
+talyor.sayHello()
 
-let lion = Lion(isTame: false)
-lion.speak()
+// Checkpoint 8
+
+protocol Building {
+    var rooms: Int { get }
+    var cost: Int { get }
+    var agent: String { get set }
+
+}
+
+func salesSummary(buildings: [Building]) {
+    var result = 0
+    for building in buildings {
+        result += building.cost
+    }
+    print("Sales summary: $\(result)")
+}
+
+struct House: Building {
+    var rooms: Int = 5
+    var cost: Int = 200000
+    var agent: String = "House agent"
+}
+
+struct Office: Building {
+    var rooms: Int = 30
+    var cost: Int = 500000
+    var agent: String = "Office agent"
+}
+
+let house = House()
+let office = Office()
+
+salesSummary(buildings: [house, office])
