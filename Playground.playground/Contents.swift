@@ -1,186 +1,107 @@
 import Cocoa
 
-// Protocol
+// Optional
 
-protocol Vehicle {
-    var name: String { get }
-    var currentPassengers: Int { get set }
-    func estimateTime(for distance: Int) -> Int
-    func travel(distance: Int)
+let opposites = ["Mario": "Wario", "Luigi": "Waluigi"]
+let peachOpposites = opposites["Peach"]
+
+if let marioOpposites = opposites["Mario"] {
+    print("Mario's oppsosite is \(marioOpposites)")
 }
 
-struct Car: Vehicle {
-    let name: String = "Car"
-    var currentPassengers: Int = 1
-    
-    
-    func estimateTime(for distance: Int) -> Int {
-        distance / 50
-    }
-    
-    func travel(distance: Int) {
-        print("I'm driving \(distance)km")
-    }
-    
-    func openSunroof() {
-        print("It's a nice day!")
-    }
+var username: String? = nil
+
+if let unwrappedName = username {
+    print("We got a user: \(unwrappedName)")
+} else {
+    print("The optional was empty.")
 }
 
-struct Bicycle: Vehicle {
-    let name: String = "Bicycle"
-    var currentPassengers: Int = 1
-    
-    func estimateTime(for distance: Int) -> Int {
-        distance / 10
-    }
-    
-    func travel(distance: Int) {
-        print("I'm cycling \(distance)km")
-    }
+var num1 = 1_000_000
+var num2 = 0
+var num3: Int? = nil
+
+var str1 = "Hello"
+var str2 = ""
+var str3: String? = nil
+
+var arr = [0]
+var arr2 = [Int]()
+var arr3: [Int]? = nil
+
+func square(number: Int) -> Int {
+    number * number
 }
 
-func commute(distance: Int, using vehicle: Vehicle) {
-    if vehicle.estimateTime(for: distance) > 100 {
-        print("That's too slow! I'll try a different vehicle.")
-    } else {
-        vehicle.travel(distance: distance)
-    }
+var number: Int? = nil
+if let number = number {
+    print(square(number: number))
 }
 
-func getTravelEstimates(using vehicles: [Vehicle], distance: Int) {
-    for vehicle in vehicles {
-        let estimate = vehicle.estimateTime(for: distance)
-        print("\(vehicle.name): \(estimate) hours to travel \(distance)km")
-    }
-}
-
-let car = Car()
-commute(distance: 100, using: car)
-
-let bike = Bicycle()
-commute(distance: 50, using: bike)
-
-getTravelEstimates(using: [car, bike], distance: 150)
-
-// Opaque return types
-
-func getRandomNumber() -> some Equatable {
-    Double.random(in: 1...6)
-}
-
-func getRandomBool() -> some Equatable {
-    Bool.random()
-}
-
-print(getRandomNumber() == getRandomNumber())
-
-// Extension
-
-
-extension String {
-    func trimmed() -> String {
-        self.trimmingCharacters(in: .whitespacesAndNewlines)
+// Optional with guard
+func printSquare(of number: Int?) {
+    guard let number = number else {
+        print("Missing input")
+        return
     }
     
-    mutating func trim() {
-        self = trimmed()
-    }
-    
-    var lines: [String] {
-        self.components(separatedBy: .newlines)
-    }
+    print("\(number) x \(number) is \(number * number)")
 }
 
-var quote = "    The truth is rarely pure and never simple    "
-quote.trim()
+// Nil coalescing
+let captains = [
+    "Enterprise": "Picard",
+    "Voyager": "Janeway",
+    "Definat": "Sisko"
+]
 
-let lyrics = """
-But I keep cruising
-Can't stop, won't stop moving
-It's like I got this music in my mind
-Saying it's gonna be alright
-"""
+let new = captains["Serenity", default: "N/A"]
 
-print(lyrics.lines.count)
+let tvShows = ["Archer", "Babylon5", "Ted Lasso"]
+let favorite = tvShows.randomElement() ?? "None"
 
 struct Book {
     let title: String
-    let pageCount: Int
-    let readingHours: Int
-
+    let author: String?
 }
 
-extension Book {
-    init(title: String, pageCount: Int) {
-        self.title = title
-        self.pageCount = pageCount
-        self.readingHours = pageCount / 50
-    }
+let book = Book(title: "Beowulf", author: nil)
+let author = book.author ?? "Anonymous"
+print(author)
+
+let input = ""
+let number2 = Int(input) ?? 0
+print(number2)
+
+// Optional chaining
+let names = ["Arya", "Bran", "Robb", "Sansa"]
+let chosen = names.randomElement()?.uppercased() ?? "No one"
+print("Next in line: \(chosen)")
+
+
+var book2: Book? = nil
+let author2 = book2?.author?.first?.uppercased()
+
+// Optional try
+enum UserError: Error {
+    case badID, networkFailed
 }
 
-let lotr = Book(title: "Load of the Rings", pageCount: 1178, readingHours: 24)
-
-// Protocol extension
-extension Collection {
-    var isNotEmpty: Bool {
-        isEmpty == false
-    }
+func getUser(id: Int) throws -> String {
+    throw UserError.networkFailed
 }
 
-let guests = ["Mario", "Luigi", "Peach"]
-if guests.isNotEmpty {
-    print("Guest count: \(guests.count)")
+if let user = try? getUser(id: 23) {
+    print("User: \(user)")
 }
 
-protocol Person {
-    var name: String { get }
-    func sayHello()
+let user = (try? getUser(id: 23)) ?? "Anonymous"
+print(user)
+
+// Checkpoint 9
+func getRandom(array: [Int]?) -> Int {
+    return array?.randomElement() ?? Int.random(in: 1...100)
 }
 
-extension Person {
-    func sayHello() {
-        print("Hi, I'm \(name)")
-    }
-}
-
-struct Employee: Person {
-    let name: String
-}
-
-let talyor = Employee(name: "Talyor Swift")
-talyor.sayHello()
-
-// Checkpoint 8
-
-protocol Building {
-    var rooms: Int { get }
-    var cost: Int { get }
-    var agent: String { get set }
-
-}
-
-func salesSummary(buildings: [Building]) {
-    var result = 0
-    for building in buildings {
-        result += building.cost
-    }
-    print("Sales summary: $\(result)")
-}
-
-struct House: Building {
-    var rooms: Int = 5
-    var cost: Int = 200000
-    var agent: String = "House agent"
-}
-
-struct Office: Building {
-    var rooms: Int = 30
-    var cost: Int = 500000
-    var agent: String = "Office agent"
-}
-
-let house = House()
-let office = Office()
-
-salesSummary(buildings: [house, office])
+let test: [Int]? = nil
+getRandom(array: test)
