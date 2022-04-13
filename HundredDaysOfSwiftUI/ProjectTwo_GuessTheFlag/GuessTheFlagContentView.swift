@@ -9,10 +9,14 @@ import SwiftUI
 
 struct GuessTheFlagContentView: View {
     @State private var showingScore = false
+    @State private var showingFinal = false
     @State private var scoreTitle = ""
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
     @State private var correctAnswer = Int.random(in: 0...2)
+    
+    @State private var score = 0
+    @State private var questions = 8
     
     var body: some View {
         ZStack {
@@ -55,7 +59,7 @@ struct GuessTheFlagContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: ???")
+                Text("Score: \(score)")
                     .foregroundColor(.white)
                     .font(.title.bold())
                 
@@ -64,25 +68,36 @@ struct GuessTheFlagContentView: View {
             .padding()
         }
         .alert(scoreTitle, isPresented: $showingScore) {
-            Button("Continue", action: askQuestion)
+            if questions == 0 {
+                Button("Reset", action: reset)
+            } else {
+                Button("Continue", action: askQuestion)
+            }
         } message: {
-            Text("Your score is ???")
+            Text(questions == 0 ? "Your final score is \(score)" : "Your score is \(score)")
         }
     }
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            score += 1
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "Wrong! That’s the flag of \(countries[number])"
         }
-        
+        questions -= 1
         showingScore = true
     }
     
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+    }
+    
+    func reset() {
+        askQuestion()
+        score = 0
+        questions = 8
     }
 }
 
