@@ -15,6 +15,7 @@
 		F97ED3B027F2D2490033C15C /* HundredDaysOfSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED3AF27F2D2490033C15C /* HundredDaysOfSwiftUIUITests.swift */; };
 		F97ED3B227F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */; };
 		F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */; };
+		F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F97ED3BF27F2DB6E0033C15C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOneContentView.swift; sourceTree = "<group>"; };
+		F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F99FC3F728054C430054CAF7 /* ProjectOne_WeSplit */,
 				F99FC3F828054E330054CAF7 /* ChallengeOne */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
+				F99FC3FB280673CD0054CAF7 /* ProjectTwo_GuessTheFlag */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
 			path = HundredDaysOfSwiftUI;
@@ -146,6 +149,14 @@
 				F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */,
 			);
 			path = ChallengeOne;
+			sourceTree = "<group>";
+		};
+		F99FC3FB280673CD0054CAF7 /* ProjectTwo_GuessTheFlag */ = {
+			isa = PBXGroup;
+			children = (
+				F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */,
+			);
+			path = ProjectTwo_GuessTheFlag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
