@@ -103,8 +103,8 @@
 				F97ED39427F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift */,
 				F99FC3F728054C430054CAF7 /* ProjectOne_WeSplit */,
 				F99FC3F828054E330054CAF7 /* ChallengeOne */,
-				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F99FC3FB280673CD0054CAF7 /* ProjectTwo_GuessTheFlag */,
+				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
 			path = HundredDaysOfSwiftUI;
