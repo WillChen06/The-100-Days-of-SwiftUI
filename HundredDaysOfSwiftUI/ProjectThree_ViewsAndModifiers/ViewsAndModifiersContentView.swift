@@ -7,13 +7,32 @@
 
 import SwiftUI
 
+struct Title: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.cyan)
+    }
+}
+
+extension View {
+    func titleStyle() -> some View {
+        modifier(Title())
+    }
+}
+
 struct GridStack<Content: View>: View {
     let rows: Int
     let columns: Int
     @ViewBuilder let content: (Int, Int) -> Content
     
+    
     var body: some View {
         VStack {
+            Spacer()
+            Text("Form for testing.")
+                .titleStyle()
+                .padding(30)
             ForEach(0..<rows, id: \.self) { row in
                 HStack {
                     ForEach(0..<columns, id: \.self) { column in
@@ -21,7 +40,8 @@ struct GridStack<Content: View>: View {
                     }
                 }
             }
-            
+            Spacer()
+            Spacer()
         }
     }
 }

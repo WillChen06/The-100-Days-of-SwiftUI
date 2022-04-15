@@ -18,6 +18,16 @@ struct GuessTheFlagContentView: View {
     @State private var score = 0
     @State private var questions = 8
     
+    struct FlagImage: View {
+        let name: String
+        var body: some View {
+            Image(name)
+                .renderingMode(.original)
+                .clipShape(Capsule())
+                .shadow(radius: 5)
+        }
+    }
+    
     var body: some View {
         ZStack {
             RadialGradient(stops: [
@@ -43,10 +53,7 @@ struct GuessTheFlagContentView: View {
                         Button {
                             flagTapped(number)
                         } label: {
-                            Image(countries[number])
-                                .renderingMode(.original)
-                                .clipShape(Capsule())
-                                .shadow(radius: 5)
+                            FlagImage(name: countries[number])
                         }
                         
                     }

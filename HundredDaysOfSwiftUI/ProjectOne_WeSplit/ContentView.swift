@@ -58,7 +58,7 @@ struct ContentView: View {
                             Text($0, format: .percent)
                         }
                     }
-//                    .pickerStyle(.segmented)
+                    //                    .pickerStyle(.segmented)
                 } header: {
                     Text("How much tip do you want to leave?")
                 }
@@ -71,6 +71,7 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalAmount, format: currencyFormatter)
+                        .listRowBackground(tipPercentage == 0 ? Color.red : Color.white)
                 } header: {
                     Text("Total amount")
                 }
