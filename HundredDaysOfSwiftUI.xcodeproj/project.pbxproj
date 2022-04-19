@@ -19,6 +19,7 @@
 		F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */; };
 		F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC402280D0BE00054CAF7 /* RPSContentView.swift */; };
 		F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5761A280E5E2500866612 /* BetterRestContentView.swift */; };
+		F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F9A5761E280E8CD800866612 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersContentView.swift; sourceTree = "<group>"; };
 		F99FC402280D0BE00054CAF7 /* RPSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSContentView.swift; sourceTree = "<group>"; };
 		F9A5761A280E5E2500866612 /* BetterRestContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestContentView.swift; sourceTree = "<group>"; };
+		F9A5761E280E8CD800866612 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F9A5761A280E5E2500866612 /* BetterRestContentView.swift */,
+				F9A5761E280E8CD800866612 /* SleepCalculator.mlmodel */,
 			);
 			path = "ProjectFour_ BetterRest";
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
+				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
