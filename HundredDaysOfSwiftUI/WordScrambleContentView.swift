@@ -16,10 +16,12 @@ struct WordScrambleContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var score = 0
+    
     var body: some View {
         NavigationView {
             List {
-                Section {
+                Section(footer: ScoreFooterView(playerScore: score)) {
                     TextField("Enter your word", text: $newWord)
                         .autocapitalization(.none)
                 }
@@ -32,6 +34,11 @@ struct WordScrambleContentView: View {
                         }
                     }
                 }
+            }
+            .toolbar {
+                Button(action: restartGame, label: {
+                    Text("NewGame")
+                })
             }
             .navigationTitle(rootWord)
             .onSubmit(addNewWord)
@@ -73,6 +80,7 @@ struct WordScrambleContentView: View {
         }
         withAnimation {
             usedWords.insert(answer, at: 0)
+            score += answer.count
         }
         newWord = ""
     }
@@ -122,6 +130,15 @@ struct WordScrambleContentView: View {
         errorTitle = title
         errorMessage = message
         showingError = true
+    }
+    
+    func restartGame() {
+        startGame()
+        usedWords.removeAll()
+        withAnimation {
+            score = 0
+            newWord = ""
+        }
     }
 }
 
