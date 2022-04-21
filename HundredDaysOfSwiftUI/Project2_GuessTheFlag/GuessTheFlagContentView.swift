@@ -18,6 +18,10 @@ struct GuessTheFlagContentView: View {
     @State private var score = 0
     @State private var questions = 8
     
+    @State private var flagsDegree = [0.0, 0.0, 0.0]
+    @State private var flagsOpacity = [1.0, 1.0, 1.0]
+    @State private var flagsScale = [1.0, 1.0, 1.0]
+    
     struct FlagImage: View {
         let name: String
         var body: some View {
@@ -55,7 +59,9 @@ struct GuessTheFlagContentView: View {
                         } label: {
                             FlagImage(name: countries[number])
                         }
-                        
+                        .rotation3DEffect(.degrees(flagsDegree[number]), axis: (x: 0, y: 1, z: 0))
+                        .opacity(flagsOpacity[number])
+                        .scaleEffect(flagsScale[number])
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -64,12 +70,9 @@ struct GuessTheFlagContentView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 
                 Spacer()
-                Spacer()
-                
                 Text("Score: \(score)")
                     .foregroundColor(.white)
                     .font(.title.bold())
-                
                 Spacer()
             }
             .padding()
@@ -87,6 +90,15 @@ struct GuessTheFlagContentView: View {
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
+            withAnimation {
+                flagsDegree[correctAnswer] = 360
+                for (index, _)  in flagsOpacity.enumerated() {
+                    flagsOpacity[index] = index == correctAnswer ? 1.0 : 0.25
+                }
+                for (index, _)  in flagsScale.enumerated() {
+                    flagsScale[index] = index == correctAnswer ? 1.0 : 0.25
+                }
+            }
             scoreTitle = "Correct"
             score += 1
         } else {
@@ -97,6 +109,9 @@ struct GuessTheFlagContentView: View {
     }
     
     func askQuestion() {
+        flagsScale = [1.0, 1.0, 1.0]
+        flagsDegree = [0.0, 0.0, 0.0]
+        flagsOpacity = [1.0, 1.0, 1.0]
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }

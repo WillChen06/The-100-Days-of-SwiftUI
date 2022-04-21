@@ -121,14 +121,14 @@
 			isa = PBXGroup;
 			children = (
 				F97ED39427F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift */,
-				F99FC3F728054C430054CAF7 /* ProjectOne_WeSplit */,
-				F99FC3F828054E330054CAF7 /* ChallengeOne */,
-				F99FC3FB280673CD0054CAF7 /* ProjectTwo_GuessTheFlag */,
-				F99FC3FE2807FE8E0054CAF7 /* ProjectThree_ViewsAndModifiers */,
-				F99FC401280D0BC30054CAF7 /* ChanllengeTwo */,
-				F9A57619280E5DB600866612 /* ProjectFour_ BetterRest */,
-				F9A57620280FA95300866612 /* ProjectFive_WordScramble */,
-				F9A576252810F96600866612 /* ProjectSix_Animations */,
+				F99FC3F728054C430054CAF7 /* Project1_WeSplit */,
+				F99FC3F828054E330054CAF7 /* Challenge1 */,
+				F99FC3FB280673CD0054CAF7 /* Project2_GuessTheFlag */,
+				F99FC3FE2807FE8E0054CAF7 /* Project3_ViewsAndModifiers */,
+				F99FC401280D0BC30054CAF7 /* Chanllenge2 */,
+				F9A57619280E5DB600866612 /* Project4_ BetterRest */,
+				F9A57620280FA95300866612 /* Project5_WordScramble */,
+				F9A576252810F96600866612 /* Project6_Animations */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -160,65 +160,65 @@
 			path = HundredDaysOfSwiftUIUITests;
 			sourceTree = "<group>";
 		};
-		F99FC3F728054C430054CAF7 /* ProjectOne_WeSplit */ = {
+		F99FC3F728054C430054CAF7 /* Project1_WeSplit */ = {
 			isa = PBXGroup;
 			children = (
 				F97ED39627F2D2470033C15C /* ContentView.swift */,
 			);
-			path = ProjectOne_WeSplit;
+			path = Project1_WeSplit;
 			sourceTree = "<group>";
 		};
-		F99FC3F828054E330054CAF7 /* ChallengeOne */ = {
+		F99FC3F828054E330054CAF7 /* Challenge1 */ = {
 			isa = PBXGroup;
 			children = (
 				F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */,
 			);
-			path = ChallengeOne;
+			path = Challenge1;
 			sourceTree = "<group>";
 		};
-		F99FC3FB280673CD0054CAF7 /* ProjectTwo_GuessTheFlag */ = {
+		F99FC3FB280673CD0054CAF7 /* Project2_GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
 				F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */,
 			);
-			path = ProjectTwo_GuessTheFlag;
+			path = Project2_GuessTheFlag;
 			sourceTree = "<group>";
 		};
-		F99FC3FE2807FE8E0054CAF7 /* ProjectThree_ViewsAndModifiers */ = {
+		F99FC3FE2807FE8E0054CAF7 /* Project3_ViewsAndModifiers */ = {
 			isa = PBXGroup;
 			children = (
 				F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */,
 			);
-			path = ProjectThree_ViewsAndModifiers;
+			path = Project3_ViewsAndModifiers;
 			sourceTree = "<group>";
 		};
-		F99FC401280D0BC30054CAF7 /* ChanllengeTwo */ = {
+		F99FC401280D0BC30054CAF7 /* Chanllenge2 */ = {
 			isa = PBXGroup;
 			children = (
 				F99FC402280D0BE00054CAF7 /* RPSContentView.swift */,
 			);
-			path = ChanllengeTwo;
+			path = Chanllenge2;
 			sourceTree = "<group>";
 		};
-		F9A57619280E5DB600866612 /* ProjectFour_ BetterRest */ = {
+		F9A57619280E5DB600866612 /* Project4_ BetterRest */ = {
 			isa = PBXGroup;
 			children = (
 				F9A5761A280E5E2500866612 /* BetterRestContentView.swift */,
 				F9A5761E280E8CD800866612 /* SleepCalculator.mlmodel */,
 			);
-			path = "ProjectFour_ BetterRest";
+			path = "Project4_ BetterRest";
 			sourceTree = "<group>";
 		};
-		F9A57620280FA95300866612 /* ProjectFive_WordScramble */ = {
+		F9A57620280FA95300866612 /* Project5_WordScramble */ = {
 			isa = PBXGroup;
 			children = (
 				F9A57621280FA97000866612 /* WordScrambleContentView.swift */,
 				F9A57623280FD9B100866612 /* start.txt */,
 			);
-			name = ProjectFive_WordScramble;
+			name = Project5_WordScramble;
 			sourceTree = "<group>";
 		};
-		F9A576252810F96600866612 /* ProjectSix_Animations */ = {
+		F9A576252810F96600866612 /* Project6_Animations */ = {
 			isa = PBXGroup;
 			children = (
 				F9A576262810F9AF00866612 /* AnimationsContentView.swift */,
@@ -226,7 +226,7 @@
 				F9A5762A281105E000866612 /* StepperAnimation.swift */,
 				F9A5762C281134E800866612 /* WordDragging.swift */,
 			);
-			path = ProjectSix_Animations;
+			path = Project6_Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
