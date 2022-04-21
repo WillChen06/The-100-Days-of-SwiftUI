@@ -25,6 +25,7 @@
 		F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A576262810F9AF00866612 /* AnimationsContentView.swift */; };
 		F9A576292811039200866612 /* OverlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A576282811039200866612 /* OverlayButton.swift */; };
 		F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762A281105E000866612 /* StepperAnimation.swift */; };
+		F9A5762D281134E800866612 /* WordDragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762C281134E800866612 /* WordDragging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F9A576262810F9AF00866612 /* AnimationsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsContentView.swift; sourceTree = "<group>"; };
 		F9A576282811039200866612 /* OverlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayButton.swift; sourceTree = "<group>"; };
 		F9A5762A281105E000866612 /* StepperAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAnimation.swift; sourceTree = "<group>"; };
+		F9A5762C281134E800866612 /* WordDragging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDragging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				F9A576262810F9AF00866612 /* AnimationsContentView.swift */,
 				F9A576282811039200866612 /* OverlayButton.swift */,
 				F9A5762A281105E000866612 /* StepperAnimation.swift */,
+				F9A5762C281134E800866612 /* WordDragging.swift */,
 			);
 			path = ProjectSix_Animations;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			files = (
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
+				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
