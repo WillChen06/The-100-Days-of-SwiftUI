@@ -22,6 +22,9 @@
 		F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F9A5761E280E8CD800866612 /* SleepCalculator.mlmodel */; };
 		F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A57621280FA97000866612 /* WordScrambleContentView.swift */; };
 		F9A57624280FD9B200866612 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F9A57623280FD9B100866612 /* start.txt */; };
+		F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A576262810F9AF00866612 /* AnimationsContentView.swift */; };
+		F9A576292811039200866612 /* OverlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A576282811039200866612 /* OverlayButton.swift */; };
+		F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762A281105E000866612 /* StepperAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		F9A5761E280E8CD800866612 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		F9A57621280FA97000866612 /* WordScrambleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleContentView.swift; sourceTree = "<group>"; };
 		F9A57623280FD9B100866612 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		F9A576262810F9AF00866612 /* AnimationsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsContentView.swift; sourceTree = "<group>"; };
+		F9A576282811039200866612 /* OverlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayButton.swift; sourceTree = "<group>"; };
+		F9A5762A281105E000866612 /* StepperAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				F99FC401280D0BC30054CAF7 /* ChanllengeTwo */,
 				F9A57619280E5DB600866612 /* ProjectFour_ BetterRest */,
 				F9A57620280FA95300866612 /* ProjectFive_WordScramble */,
+				F9A576252810F96600866612 /* ProjectSix_Animations */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -207,6 +214,16 @@
 				F9A57623280FD9B100866612 /* start.txt */,
 			);
 			name = ProjectFive_WordScramble;
+			sourceTree = "<group>";
+		};
+		F9A576252810F96600866612 /* ProjectSix_Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F9A576262810F9AF00866612 /* AnimationsContentView.swift */,
+				F9A576282811039200866612 /* OverlayButton.swift */,
+				F9A5762A281105E000866612 /* StepperAnimation.swift */,
+			);
+			path = ProjectSix_Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,8 +364,11 @@
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
+				F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
+				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
+				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
