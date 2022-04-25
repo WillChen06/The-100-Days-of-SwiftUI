@@ -26,6 +26,7 @@
 		F9A576292811039200866612 /* OverlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A576282811039200866612 /* OverlayButton.swift */; };
 		F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762A281105E000866612 /* StepperAnimation.swift */; };
 		F9A5762D281134E800866612 /* WordDragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762C281134E800866612 /* WordDragging.swift */; };
+		F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762F2812531000866612 /* EdutainmentContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F9A576282811039200866612 /* OverlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayButton.swift; sourceTree = "<group>"; };
 		F9A5762A281105E000866612 /* StepperAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAnimation.swift; sourceTree = "<group>"; };
 		F9A5762C281134E800866612 /* WordDragging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDragging.swift; sourceTree = "<group>"; };
+		F9A5762F2812531000866612 /* EdutainmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdutainmentContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				F9A57619280E5DB600866612 /* Project4_ BetterRest */,
 				F9A57620280FA95300866612 /* Project5_WordScramble */,
 				F9A576252810F96600866612 /* Project6_Animations */,
+				F9A5762E281252F600866612 /* Chanllenge3 */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -227,6 +230,14 @@
 				F9A5762C281134E800866612 /* WordDragging.swift */,
 			);
 			path = Project6_Animations;
+			sourceTree = "<group>";
+		};
+		F9A5762E281252F600866612 /* Chanllenge3 */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5762F2812531000866612 /* EdutainmentContentView.swift */,
+			);
+			path = Chanllenge3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +374,7 @@
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
 				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
+				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
