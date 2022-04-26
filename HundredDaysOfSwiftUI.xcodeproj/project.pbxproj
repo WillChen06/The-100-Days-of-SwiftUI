@@ -11,6 +11,10 @@
 		F927B7542817C0A000637927 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7532817C09F00637927 /* DeleteView.swift */; };
 		F927B7562817C59D00637927 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7552817C59D00637927 /* AppStorageView.swift */; };
 		F927B7582817C5C500637927 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7572817C5C500637927 /* DismissView.swift */; };
+		F927B75A2817D11400637927 /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7592817D11300637927 /* CodableView.swift */; };
+		F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B75B2817D18F00637927 /* ExpenseItem.swift */; };
+		F927B75E2817D1CE00637927 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B75D2817D1CE00637927 /* Expenses.swift */; };
+		F927B7602817D68900637927 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B75F2817D68900637927 /* AddView.swift */; };
 		F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED39427F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift */; };
 		F97ED39727F2D2470033C15C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED39627F2D2470033C15C /* ContentView.swift */; };
 		F97ED39927F2D2490033C15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97ED39827F2D2490033C15C /* Assets.xcassets */; };
@@ -55,6 +59,10 @@
 		F927B7532817C09F00637927 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
 		F927B7552817C59D00637927 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 		F927B7572817C5C500637927 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
+		F927B7592817D11300637927 /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
+		F927B75B2817D18F00637927 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		F927B75D2817D1CE00637927 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		F927B75F2817D68900637927 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		F97ED39127F2D2470033C15C /* HundredDaysOfSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HundredDaysOfSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97ED39427F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIApp.swift; sourceTree = "<group>"; };
 		F97ED39627F2D2470033C15C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,10 +117,14 @@
 		F927B750281797D700637927 /* Project7_iExpense */ = {
 			isa = PBXGroup;
 			children = (
+				F927B75B2817D18F00637927 /* ExpenseItem.swift */,
+				F927B75D2817D1CE00637927 /* Expenses.swift */,
 				F927B7512817987900637927 /* iExpenseContentView.swift */,
+				F927B75F2817D68900637927 /* AddView.swift */,
 				F927B7572817C5C500637927 /* DismissView.swift */,
 				F927B7532817C09F00637927 /* DeleteView.swift */,
 				F927B7552817C59D00637927 /* AppStorageView.swift */,
+				F927B7592817D11300637927 /* CodableView.swift */,
 			);
 			path = Project7_iExpense;
 			sourceTree = "<group>";
@@ -397,6 +409,10 @@
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
+				F927B7602817D68900637927 /* AddView.swift in Sources */,
+				F927B75E2817D1CE00637927 /* Expenses.swift in Sources */,
+				F927B75A2817D11400637927 /* CodableView.swift in Sources */,
+				F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */,
 				F927B7562817C59D00637927 /* AppStorageView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
