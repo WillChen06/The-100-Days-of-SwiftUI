@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7512817987900637927 /* iExpenseContentView.swift */; };
+		F927B7542817C0A000637927 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7532817C09F00637927 /* DeleteView.swift */; };
+		F927B7562817C59D00637927 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7552817C59D00637927 /* AppStorageView.swift */; };
+		F927B7582817C5C500637927 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7572817C5C500637927 /* DismissView.swift */; };
 		F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED39427F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift */; };
 		F97ED39727F2D2470033C15C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED39627F2D2470033C15C /* ContentView.swift */; };
 		F97ED39927F2D2490033C15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97ED39827F2D2490033C15C /* Assets.xcassets */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F927B7512817987900637927 /* iExpenseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseContentView.swift; sourceTree = "<group>"; };
+		F927B7532817C09F00637927 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
+		F927B7552817C59D00637927 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
+		F927B7572817C5C500637927 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		F97ED39127F2D2470033C15C /* HundredDaysOfSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HundredDaysOfSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97ED39427F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIApp.swift; sourceTree = "<group>"; };
 		F97ED39627F2D2470033C15C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +106,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F927B750281797D700637927 /* Project7_iExpense */ = {
+			isa = PBXGroup;
+			children = (
+				F927B7512817987900637927 /* iExpenseContentView.swift */,
+				F927B7572817C5C500637927 /* DismissView.swift */,
+				F927B7532817C09F00637927 /* DeleteView.swift */,
+				F927B7552817C59D00637927 /* AppStorageView.swift */,
+			);
+			path = Project7_iExpense;
+			sourceTree = "<group>";
+		};
 		F97ED38827F2D2470033C15C = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +151,7 @@
 				F9A57620280FA95300866612 /* Project5_WordScramble */,
 				F9A576252810F96600866612 /* Project6_Animations */,
 				F9A5762E281252F600866612 /* Chanllenge3 */,
+				F927B750281797D700637927 /* Project7_iExpense */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -376,12 +396,16 @@
 				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
+				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
+				F927B7562817C59D00637927 /* AppStorageView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
+				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
 				F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
+				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
