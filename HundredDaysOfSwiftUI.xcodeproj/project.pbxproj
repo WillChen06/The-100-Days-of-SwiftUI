@@ -117,14 +117,8 @@
 		F927B750281797D700637927 /* Project7_iExpense */ = {
 			isa = PBXGroup;
 			children = (
-				F927B75B2817D18F00637927 /* ExpenseItem.swift */,
-				F927B75D2817D1CE00637927 /* Expenses.swift */,
-				F927B7512817987900637927 /* iExpenseContentView.swift */,
-				F927B75F2817D68900637927 /* AddView.swift */,
-				F927B7572817C5C500637927 /* DismissView.swift */,
-				F927B7532817C09F00637927 /* DeleteView.swift */,
-				F927B7552817C59D00637927 /* AppStorageView.swift */,
-				F927B7592817D11300637927 /* CodableView.swift */,
+				F9F6F358281912B4003FD5E7 /* Model */,
+				F9F6F357281912AD003FD5E7 /* View */,
 			);
 			path = Project7_iExpense;
 			sourceTree = "<group>";
@@ -270,6 +264,28 @@
 				F9A5762F2812531000866612 /* EdutainmentContentView.swift */,
 			);
 			path = Chanllenge3;
+			sourceTree = "<group>";
+		};
+		F9F6F357281912AD003FD5E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F927B7512817987900637927 /* iExpenseContentView.swift */,
+				F927B75F2817D68900637927 /* AddView.swift */,
+				F927B7572817C5C500637927 /* DismissView.swift */,
+				F927B7532817C09F00637927 /* DeleteView.swift */,
+				F927B7552817C59D00637927 /* AppStorageView.swift */,
+				F927B7592817D11300637927 /* CodableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9F6F358281912B4003FD5E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F927B75B2817D18F00637927 /* ExpenseItem.swift */,
+				F927B75D2817D1CE00637927 /* Expenses.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
