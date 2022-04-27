@@ -35,6 +35,11 @@
 		F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762A281105E000866612 /* StepperAnimation.swift */; };
 		F9A5762D281134E800866612 /* WordDragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762C281134E800866612 /* WordDragging.swift */; };
 		F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762F2812531000866612 /* EdutainmentContentView.swift */; };
+		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
+		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
+		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
+		F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */; };
+		F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,11 @@
 		F9A5762A281105E000866612 /* StepperAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAnimation.swift; sourceTree = "<group>"; };
 		F9A5762C281134E800866612 /* WordDragging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDragging.swift; sourceTree = "<group>"; };
 		F9A5762F2812531000866612 /* EdutainmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdutainmentContentView.swift; sourceTree = "<group>"; };
+		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
+		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
+		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
+		F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableButton.swift; sourceTree = "<group>"; };
+		F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +168,7 @@
 				F9A576252810F96600866612 /* Project6_Animations */,
 				F9A5762E281252F600866612 /* Chanllenge3 */,
 				F927B750281797D700637927 /* Project7_iExpense */,
+				F9F6F35928192179003FD5E7 /* Project8_MoonShot */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -286,6 +297,18 @@
 				F927B75D2817D1CE00637927 /* Expenses.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F9F6F35928192179003FD5E7 /* Project8_MoonShot */ = {
+			isa = PBXGroup;
+			children = (
+				F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */,
+				F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */,
+				F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */,
+				F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */,
+				F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */,
+			);
+			path = Project8_MoonShot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +445,7 @@
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
 				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
+				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
@@ -431,16 +455,20 @@
 				F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */,
 				F927B7562817C59D00637927 /* AppStorageView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
+				F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
+				F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */,
 				F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */,
+				F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
+				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
