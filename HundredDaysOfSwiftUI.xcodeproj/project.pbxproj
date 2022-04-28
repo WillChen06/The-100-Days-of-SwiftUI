@@ -48,6 +48,9 @@
 		F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F370281A4497003FD5E7 /* Color-Theme.swift */; };
 		F9F6F373281A641E003FD5E7 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F372281A641E003FD5E7 /* MissionView.swift */; };
 		F9F6F375281A6B54003FD5E7 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F374281A6B54003FD5E7 /* AstronautView.swift */; };
+		F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F376281A784C003FD5E7 /* MissionGridView.swift */; };
+		F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F378281A794C003FD5E7 /* CrewMember.swift */; };
+		F9F6F37B281A828C003FD5E7 /* MissionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F37A281A828C003FD5E7 /* MissionListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		F9F6F370281A4497003FD5E7 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		F9F6F372281A641E003FD5E7 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		F9F6F374281A6B54003FD5E7 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		F9F6F376281A784C003FD5E7 /* MissionGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionGridView.swift; sourceTree = "<group>"; };
+		F9F6F378281A794C003FD5E7 /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
+		F9F6F37A281A828C003FD5E7 /* MissionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,14 +326,8 @@
 			children = (
 				F9F6F368281A3B0B003FD5E7 /* JSON */,
 				F9F6F36B281A3BA4003FD5E7 /* Model */,
-				F9F6F370281A4497003FD5E7 /* Color-Theme.swift */,
-				F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */,
-				F9F6F372281A641E003FD5E7 /* MissionView.swift */,
-				F9F6F374281A6B54003FD5E7 /* AstronautView.swift */,
-				F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */,
-				F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */,
-				F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */,
-				F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */,
+				F9F6F37D281A8C68003FD5E7 /* Extension */,
+				F9F6F37C281A8C5E003FD5E7 /* View */,
 			);
 			path = Project8_MoonShot;
 			sourceTree = "<group>";
@@ -347,8 +347,33 @@
 				F9F6F369281A3B99003FD5E7 /* Astronaut.swift */,
 				F9F6F36C281A3BE9003FD5E7 /* Bundle-Decodable.swift */,
 				F9F6F36E281A3E57003FD5E7 /* Mission.swift */,
+				F9F6F378281A794C003FD5E7 /* CrewMember.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F9F6F37C281A8C5E003FD5E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */,
+				F9F6F37A281A828C003FD5E7 /* MissionListView.swift */,
+				F9F6F376281A784C003FD5E7 /* MissionGridView.swift */,
+				F9F6F372281A641E003FD5E7 /* MissionView.swift */,
+				F9F6F374281A6B54003FD5E7 /* AstronautView.swift */,
+				F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */,
+				F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */,
+				F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */,
+				F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9F6F37D281A8C68003FD5E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F9F6F370281A4497003FD5E7 /* Color-Theme.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +513,7 @@
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
 				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
+				F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
@@ -500,6 +526,7 @@
 				F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */,
 				F927B7562817C59D00637927 /* AppStorageView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
+				F9F6F37B281A828C003FD5E7 /* MissionListView.swift in Sources */,
 				F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
@@ -517,6 +544,7 @@
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
 				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
+				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
