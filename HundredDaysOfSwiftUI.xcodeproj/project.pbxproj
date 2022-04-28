@@ -40,6 +40,12 @@
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
 		F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */; };
 		F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */; };
+		F9F6F366281A3B08003FD5E7 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F6F364281A3B08003FD5E7 /* astronauts.json */; };
+		F9F6F367281A3B08003FD5E7 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F6F365281A3B08003FD5E7 /* missions.json */; };
+		F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F369281A3B99003FD5E7 /* Astronaut.swift */; };
+		F9F6F36D281A3BE9003FD5E7 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36C281A3BE9003FD5E7 /* Bundle-Decodable.swift */; };
+		F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36E281A3E57003FD5E7 /* Mission.swift */; };
+		F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F370281A4497003FD5E7 /* Color-Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +103,12 @@
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
 		F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableButton.swift; sourceTree = "<group>"; };
 		F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingGridView.swift; sourceTree = "<group>"; };
+		F9F6F364281A3B08003FD5E7 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		F9F6F365281A3B08003FD5E7 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		F9F6F369281A3B99003FD5E7 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		F9F6F36C281A3BE9003FD5E7 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		F9F6F36E281A3E57003FD5E7 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		F9F6F370281A4497003FD5E7 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +314,9 @@
 		F9F6F35928192179003FD5E7 /* Project8_MoonShot */ = {
 			isa = PBXGroup;
 			children = (
+				F9F6F368281A3B0B003FD5E7 /* JSON */,
+				F9F6F36B281A3BA4003FD5E7 /* Model */,
+				F9F6F370281A4497003FD5E7 /* Color-Theme.swift */,
 				F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */,
 				F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */,
 				F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */,
@@ -309,6 +324,25 @@
 				F9F6F36228192FCC003FD5E7 /* ScrollingGridView.swift */,
 			);
 			path = Project8_MoonShot;
+			sourceTree = "<group>";
+		};
+		F9F6F368281A3B0B003FD5E7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F9F6F364281A3B08003FD5E7 /* astronauts.json */,
+				F9F6F365281A3B08003FD5E7 /* missions.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F9F6F36B281A3BA4003FD5E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9F6F369281A3B99003FD5E7 /* Astronaut.swift */,
+				F9F6F36C281A3BE9003FD5E7 /* Bundle-Decodable.swift */,
+				F9F6F36E281A3E57003FD5E7 /* Mission.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,8 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97ED39C27F2D2490033C15C /* Preview Assets.xcassets in Resources */,
+				F9F6F367281A3B08003FD5E7 /* missions.json in Resources */,
 				F9A57624280FD9B200866612 /* start.txt in Resources */,
 				F97ED39927F2D2490033C15C /* Assets.xcassets in Resources */,
+				F9F6F366281A3B08003FD5E7 /* astronauts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,9 +478,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F6F36D281A3BE9003FD5E7 /* Bundle-Decodable.swift in Sources */,
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
 				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
+				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
@@ -458,6 +496,7 @@
 				F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
+				F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
 				F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */,
@@ -465,6 +504,7 @@
 				F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
+				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
