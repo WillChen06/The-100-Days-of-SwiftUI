@@ -46,6 +46,8 @@
 		F9F6F36D281A3BE9003FD5E7 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36C281A3BE9003FD5E7 /* Bundle-Decodable.swift */; };
 		F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F36E281A3E57003FD5E7 /* Mission.swift */; };
 		F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F370281A4497003FD5E7 /* Color-Theme.swift */; };
+		F9F6F373281A641E003FD5E7 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F372281A641E003FD5E7 /* MissionView.swift */; };
+		F9F6F375281A6B54003FD5E7 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F374281A6B54003FD5E7 /* AstronautView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		F9F6F36C281A3BE9003FD5E7 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		F9F6F36E281A3E57003FD5E7 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		F9F6F370281A4497003FD5E7 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		F9F6F372281A641E003FD5E7 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		F9F6F374281A6B54003FD5E7 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +322,8 @@
 				F9F6F36B281A3BA4003FD5E7 /* Model */,
 				F9F6F370281A4497003FD5E7 /* Color-Theme.swift */,
 				F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */,
+				F9F6F372281A641E003FD5E7 /* MissionView.swift */,
+				F9F6F374281A6B54003FD5E7 /* AstronautView.swift */,
 				F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */,
 				F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */,
 				F9F6F36028192F9F003FD5E7 /* DecodableButton.swift */,
@@ -487,6 +493,7 @@
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
+				F9F6F373281A641E003FD5E7 /* MissionView.swift in Sources */,
 				F927B7602817D68900637927 /* AddView.swift in Sources */,
 				F927B75E2817D1CE00637927 /* Expenses.swift in Sources */,
 				F927B75A2817D11400637927 /* CodableView.swift in Sources */,
@@ -505,6 +512,7 @@
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
+				F9F6F375281A6B54003FD5E7 /* AstronautView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
