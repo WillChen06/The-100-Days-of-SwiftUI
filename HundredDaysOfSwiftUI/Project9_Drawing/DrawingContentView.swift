@@ -7,16 +7,11 @@
 
 import SwiftUI
 
+
+
 struct DrawingContentView: View {
-    @State private var colorCycle = 0.0
-    
     var body: some View {
-        VStack {
-            ColorCyclingCircle(amount: colorCycle)
-                .frame(width: 300, height: 300)
-            
-            Slider(value: $colorCycle)
-        }
+        SpirographDemo()
     }
 }
 

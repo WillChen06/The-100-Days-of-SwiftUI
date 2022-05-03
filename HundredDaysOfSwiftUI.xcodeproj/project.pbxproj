@@ -12,6 +12,10 @@
 		F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9A282100D300DC38AE /* FlowerDemo.swift */; };
 		F90EFC9D282103FD00DC38AE /* ImagePaintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9C282103FD00DC38AE /* ImagePaintDemo.swift */; };
 		F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9E2821069B00DC38AE /* ColorCyclingCircle.swift */; };
+		F90EFCA128210FEC00DC38AE /* BlendModeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA028210FEC00DC38AE /* BlendModeDemo.swift */; };
+		F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA22821141A00DC38AE /* AnimatableDataDemo.swift */; };
+		F90EFCA5282116CB00DC38AE /* AnimatablePairDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA4282116CB00DC38AE /* AnimatablePairDemo.swift */; };
+		F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA628211B0900DC38AE /* SpirographDemo.swift */; };
 		F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7512817987900637927 /* iExpenseContentView.swift */; };
 		F927B7542817C0A000637927 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7532817C09F00637927 /* DeleteView.swift */; };
 		F927B7562817C59D00637927 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7552817C59D00637927 /* AppStorageView.swift */; };
@@ -81,6 +85,10 @@
 		F90EFC9A282100D300DC38AE /* FlowerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDemo.swift; sourceTree = "<group>"; };
 		F90EFC9C282103FD00DC38AE /* ImagePaintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaintDemo.swift; sourceTree = "<group>"; };
 		F90EFC9E2821069B00DC38AE /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircle.swift; sourceTree = "<group>"; };
+		F90EFCA028210FEC00DC38AE /* BlendModeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeDemo.swift; sourceTree = "<group>"; };
+		F90EFCA22821141A00DC38AE /* AnimatableDataDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataDemo.swift; sourceTree = "<group>"; };
+		F90EFCA4282116CB00DC38AE /* AnimatablePairDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairDemo.swift; sourceTree = "<group>"; };
+		F90EFCA628211B0900DC38AE /* SpirographDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographDemo.swift; sourceTree = "<group>"; };
 		F927B7512817987900637927 /* iExpenseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseContentView.swift; sourceTree = "<group>"; };
 		F927B7532817C09F00637927 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
 		F927B7552817C59D00637927 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 				F90EFC9A282100D300DC38AE /* FlowerDemo.swift */,
 				F90EFC9C282103FD00DC38AE /* ImagePaintDemo.swift */,
 				F90EFC9E2821069B00DC38AE /* ColorCyclingCircle.swift */,
+				F90EFCA028210FEC00DC38AE /* BlendModeDemo.swift */,
+				F90EFCA22821141A00DC38AE /* AnimatableDataDemo.swift */,
+				F90EFCA4282116CB00DC38AE /* AnimatablePairDemo.swift */,
+				F90EFCA628211B0900DC38AE /* SpirographDemo.swift */,
 			);
 			path = Project9_Drawing;
 			sourceTree = "<group>";
@@ -538,6 +550,7 @@
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
 				F9A5762D281134E800866612 /* WordDragging.swift in Sources */,
 				F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */,
+				F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
@@ -558,6 +571,7 @@
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
 				F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */,
+				F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */,
 				F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */,
 				F90EFC9D282103FD00DC38AE /* ImagePaintDemo.swift in Sources */,
 				F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */,
@@ -565,6 +579,8 @@
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
+				F90EFCA5282116CB00DC38AE /* AnimatablePairDemo.swift in Sources */,
+				F90EFCA128210FEC00DC38AE /* BlendModeDemo.swift in Sources */,
 				F9F6F375281A6B54003FD5E7 /* AstronautView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
