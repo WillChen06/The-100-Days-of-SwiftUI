@@ -16,6 +16,8 @@
 		F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA22821141A00DC38AE /* AnimatableDataDemo.swift */; };
 		F90EFCA5282116CB00DC38AE /* AnimatablePairDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA4282116CB00DC38AE /* AnimatablePairDemo.swift */; };
 		F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA628211B0900DC38AE /* SpirographDemo.swift */; };
+		F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCA828224B7200DC38AE /* Challenge_AnimatableArrow.swift */; };
+		F90EFCAB28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCAA28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift */; };
 		F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7512817987900637927 /* iExpenseContentView.swift */; };
 		F927B7542817C0A000637927 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7532817C09F00637927 /* DeleteView.swift */; };
 		F927B7562817C59D00637927 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7552817C59D00637927 /* AppStorageView.swift */; };
@@ -89,6 +91,8 @@
 		F90EFCA22821141A00DC38AE /* AnimatableDataDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataDemo.swift; sourceTree = "<group>"; };
 		F90EFCA4282116CB00DC38AE /* AnimatablePairDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairDemo.swift; sourceTree = "<group>"; };
 		F90EFCA628211B0900DC38AE /* SpirographDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographDemo.swift; sourceTree = "<group>"; };
+		F90EFCA828224B7200DC38AE /* Challenge_AnimatableArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_AnimatableArrow.swift; sourceTree = "<group>"; };
+		F90EFCAA28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_ColorCyclingRectangle.swift; sourceTree = "<group>"; };
 		F927B7512817987900637927 /* iExpenseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseContentView.swift; sourceTree = "<group>"; };
 		F927B7532817C09F00637927 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
 		F927B7552817C59D00637927 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
@@ -168,6 +172,24 @@
 			isa = PBXGroup;
 			children = (
 				F90EFC962820D4B300DC38AE /* DrawingContentView.swift */,
+				F90EFCAC28224E1A00DC38AE /* Challenges */,
+				F90EFCAD28224E2C00DC38AE /* Examples */,
+			);
+			path = Project9_Drawing;
+			sourceTree = "<group>";
+		};
+		F90EFCAC28224E1A00DC38AE /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				F90EFCA828224B7200DC38AE /* Challenge_AnimatableArrow.swift */,
+				F90EFCAA28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		F90EFCAD28224E2C00DC38AE /* Examples */ = {
+			isa = PBXGroup;
+			children = (
 				F90EFC982820FB5E00DC38AE /* PathExample.swift */,
 				F90EFC9A282100D300DC38AE /* FlowerDemo.swift */,
 				F90EFC9C282103FD00DC38AE /* ImagePaintDemo.swift */,
@@ -177,7 +199,7 @@
 				F90EFCA4282116CB00DC38AE /* AnimatablePairDemo.swift */,
 				F90EFCA628211B0900DC38AE /* SpirographDemo.swift */,
 			);
-			path = Project9_Drawing;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		F927B750281797D700637927 /* Project7_iExpense */ = {
@@ -553,6 +575,7 @@
 				F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
+				F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
@@ -570,6 +593,7 @@
 				F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
+				F90EFCAB28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift in Sources */,
 				F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */,
 				F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */,
 				F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */,

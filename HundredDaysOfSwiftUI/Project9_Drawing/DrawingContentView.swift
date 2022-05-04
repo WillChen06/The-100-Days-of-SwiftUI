@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-
-
 struct DrawingContentView: View {
     var body: some View {
-        SpirographDemo()
+        Challenge_ColorCyclingRectangle()
     }
 }
 
