@@ -51,6 +51,10 @@
 		F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762A281105E000866612 /* StepperAnimation.swift */; };
 		F9A5762D281134E800866612 /* WordDragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762C281134E800866612 /* WordDragging.swift */; };
 		F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762F2812531000866612 /* EdutainmentContentView.swift */; };
+		F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3E92828BCC1008F21E6 /* CupcakeCornerContentView.swift */; };
+		F9BAA3EC2828F1E4008F21E6 /* URLSessionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */; };
+		F9BAA3F02828F252008F21E6 /* CodableClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */; };
+		F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F32828F99E008F21E6 /* AsyncImageDemo.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -135,6 +139,10 @@
 		F9A5762A281105E000866612 /* StepperAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAnimation.swift; sourceTree = "<group>"; };
 		F9A5762C281134E800866612 /* WordDragging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDragging.swift; sourceTree = "<group>"; };
 		F9A5762F2812531000866612 /* EdutainmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdutainmentContentView.swift; sourceTree = "<group>"; };
+		F9BAA3E92828BCC1008F21E6 /* CupcakeCornerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerContentView.swift; sourceTree = "<group>"; };
+		F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDemo.swift; sourceTree = "<group>"; };
+		F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableClassExample.swift; sourceTree = "<group>"; };
+		F9BAA3F32828F99E008F21E6 /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -287,6 +295,7 @@
 				F9F6F35928192179003FD5E7 /* Project8_MoonShot */,
 				F90EFC932820D3BB00DC38AE /* Project9_Drawing */,
 				F90EFCAE2823695500DC38AE /* Challenge4 */,
+				F9BAA3E82828BBB1008F21E6 /* Project10_CupcakeCorner */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -393,6 +402,17 @@
 				F9A5762F2812531000866612 /* EdutainmentContentView.swift */,
 			);
 			path = Challenge3;
+			sourceTree = "<group>";
+		};
+		F9BAA3E82828BBB1008F21E6 /* Project10_CupcakeCorner */ = {
+			isa = PBXGroup;
+			children = (
+				F9BAA3E92828BCC1008F21E6 /* CupcakeCornerContentView.swift */,
+				F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */,
+				F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */,
+				F9BAA3F32828F99E008F21E6 /* AsyncImageDemo.swift */,
+			);
+			path = Project10_CupcakeCorner;
 			sourceTree = "<group>";
 		};
 		F9F6F357281912AD003FD5E7 /* View */ = {
@@ -620,6 +640,7 @@
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
+				F9BAA3F02828F252008F21E6 /* CodableClassExample.swift in Sources */,
 				F9F6F373281A641E003FD5E7 /* MissionView.swift in Sources */,
 				F927B7602817D68900637927 /* AddView.swift in Sources */,
 				F927B75E2817D1CE00637927 /* Expenses.swift in Sources */,
@@ -649,10 +670,13 @@
 				F90EFCA128210FEC00DC38AE /* BlendModeDemo.swift in Sources */,
 				F9F6F375281A6B54003FD5E7 /* AstronautView.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
+				F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
+				F9BAA3EC2828F1E4008F21E6 /* URLSessionDemo.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
 				F90EFCB228236A2B00DC38AE /* Activity.swift in Sources */,
 				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
+				F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */,
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
 				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
