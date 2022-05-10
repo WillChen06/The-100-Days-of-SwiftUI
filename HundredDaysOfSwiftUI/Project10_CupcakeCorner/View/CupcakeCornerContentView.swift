@@ -26,7 +26,7 @@ struct CupcakeCornerContentView: View {
                 Section {
                     Toggle("Any special request?", isOn: $order.specialRequestEnabled.animation())
                     if order.specialRequestEnabled {
-                        Toggle("Add extra frosting", isOn: $order.extraForsting)
+                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
                         Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
                     }
                 }
