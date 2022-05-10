@@ -55,6 +55,10 @@
 		F9BAA3EC2828F1E4008F21E6 /* URLSessionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */; };
 		F9BAA3F02828F252008F21E6 /* CodableClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */; };
 		F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F32828F99E008F21E6 /* AsyncImageDemo.swift */; };
+		F9BAA3F6282A2C56008F21E6 /* DisabledDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F5282A2C56008F21E6 /* DisabledDemo.swift */; };
+		F9BAA3F8282A2D61008F21E6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F7282A2D61008F21E6 /* Order.swift */; };
+		F9BAA3FA282A2FEF008F21E6 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */; };
+		F9BAA3FC282A30A8008F21E6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -143,6 +147,10 @@
 		F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDemo.swift; sourceTree = "<group>"; };
 		F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableClassExample.swift; sourceTree = "<group>"; };
 		F9BAA3F32828F99E008F21E6 /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
+		F9BAA3F5282A2C56008F21E6 /* DisabledDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledDemo.swift; sourceTree = "<group>"; };
+		F9BAA3F7282A2D61008F21E6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -407,12 +415,40 @@
 		F9BAA3E82828BBB1008F21E6 /* Project10_CupcakeCorner */ = {
 			isa = PBXGroup;
 			children = (
+				F9BAA3FD282A35ED008F21E6 /* Model */,
+				F9BAA3FE282A35F5008F21E6 /* View */,
+			);
+			path = Project10_CupcakeCorner;
+			sourceTree = "<group>";
+		};
+		F9BAA3FD282A35ED008F21E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9BAA3F7282A2D61008F21E6 /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9BAA3FE282A35F5008F21E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				F9BAA3E92828BCC1008F21E6 /* CupcakeCornerContentView.swift */,
+				F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */,
+				F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */,
+				F9BAA3FF282A35FF008F21E6 /* Demo */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9BAA3FF282A35FF008F21E6 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
 				F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */,
 				F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */,
 				F9BAA3F32828F99E008F21E6 /* AsyncImageDemo.swift */,
+				F9BAA3F5282A2C56008F21E6 /* DisabledDemo.swift */,
 			);
-			path = Project10_CupcakeCorner;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		F9F6F357281912AD003FD5E7 /* View */ = {
@@ -627,6 +663,7 @@
 			files = (
 				F90EFCB728236D3C00DC38AE /* AddActivityView.swift in Sources */,
 				F9F6F36D281A3BE9003FD5E7 /* Bundle-Decodable.swift in Sources */,
+				F9BAA3FC282A30A8008F21E6 /* CheckoutView.swift in Sources */,
 				F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */,
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
@@ -634,6 +671,7 @@
 				F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */,
 				F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
+				F9BAA3F6282A2C56008F21E6 /* DisabledDemo.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */,
 				F90EFCB02823698600DC38AE /* HabitTrackingContentView.swift in Sources */,
@@ -652,7 +690,9 @@
 				F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
+				F9BAA3F8282A2D61008F21E6 /* Order.swift in Sources */,
 				F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */,
+				F9BAA3FA282A2FEF008F21E6 /* AddressView.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
 				F90EFCAB28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift in Sources */,

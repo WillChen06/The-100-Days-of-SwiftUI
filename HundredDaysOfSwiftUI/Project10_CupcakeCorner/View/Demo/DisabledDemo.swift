@@ -1,13 +1,13 @@
 //
-//  CupcakeCornerContentView.swift
+//  DisabledDemo.swift
 //  HundredDaysOfSwiftUI
 //
-//  Created by WillChen on 2022/5/9.
+//  Created by WillChen on 2022/5/10.
 //
 
 import SwiftUI
 
-struct CupcakeCornerContentView: View {
+struct DisabledDemo: View {
     @State private var username = ""
     @State private var email = ""
     
@@ -32,9 +32,8 @@ struct CupcakeCornerContentView: View {
     }
 }
 
-struct CupcakeCornerContentView_Previews: PreviewProvider {
+struct DisabledDemo_Previews: PreviewProvider {
     static var previews: some View {
-        CupcakeCornerContentView()
-            .preferredColorScheme(.dark)
+        DisabledDemo()
     }
 }
