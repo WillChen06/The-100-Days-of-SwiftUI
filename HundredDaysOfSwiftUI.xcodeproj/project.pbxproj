@@ -59,6 +59,7 @@
 		F9BAA3F8282A2D61008F21E6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F7282A2D61008F21E6 /* Order.swift */; };
 		F9BAA3FA282A2FEF008F21E6 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */; };
 		F9BAA3FC282A30A8008F21E6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */; };
+		F9C01742282B9641009E4078 /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01741282B9641009E4078 /* Cupcake.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -151,6 +152,7 @@
 		F9BAA3F7282A2D61008F21E6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		F9C01741282B9641009E4078 /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				F9BAA3F7282A2D61008F21E6 /* Order.swift */,
+				F9C01741282B9641009E4078 /* Cupcake.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
 				F90EFCB228236A2B00DC38AE /* Activity.swift in Sources */,
 				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
+				F9C01742282B9641009E4078 /* Cupcake.swift in Sources */,
 				F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */,
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
 				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
