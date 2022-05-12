@@ -60,6 +60,11 @@
 		F9BAA3FA282A2FEF008F21E6 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */; };
 		F9BAA3FC282A30A8008F21E6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */; };
 		F9C01742282B9641009E4078 /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01741282B9641009E4078 /* Cupcake.swift */; };
+		F9C01745282CAFF2009E4078 /* BookwormContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01744282CAFF2009E4078 /* BookwormContentView.swift */; };
+		F9C01747282CB240009E4078 /* BindingBtnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01746282CB240009E4078 /* BindingBtnDemo.swift */; };
+		F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */; };
+		F9C0174C282CB598009E4078 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0174B282CB598009E4078 /* DataController.swift */; };
+		F9C0174E282CD5B7009E4078 /* StudentEntityDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0174D282CD5B7009E4078 /* StudentEntityDemo.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -153,6 +158,11 @@
 		F9BAA3F9282A2FEF008F21E6 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		F9BAA3FB282A30A8008F21E6 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		F9C01741282B9641009E4078 /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
+		F9C01744282CAFF2009E4078 /* BookwormContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormContentView.swift; sourceTree = "<group>"; };
+		F9C01746282CB240009E4078 /* BindingBtnDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingBtnDemo.swift; sourceTree = "<group>"; };
+		F9C01749282CB52A009E4078 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
+		F9C0174B282CB598009E4078 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F9C0174D282CD5B7009E4078 /* StudentEntityDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntityDemo.swift; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -306,6 +316,7 @@
 				F90EFC932820D3BB00DC38AE /* Project9_Drawing */,
 				F90EFCAE2823695500DC38AE /* Challenge4 */,
 				F9BAA3E82828BBB1008F21E6 /* Project10_CupcakeCorner */,
+				F9C01743282CAFD6009E4078 /* Project11_Bookworm */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -452,6 +463,18 @@
 				F9BAA3F5282A2C56008F21E6 /* DisabledDemo.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		F9C01743282CAFD6009E4078 /* Project11_Bookworm */ = {
+			isa = PBXGroup;
+			children = (
+				F9C01744282CAFF2009E4078 /* BookwormContentView.swift */,
+				F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */,
+				F9C0174B282CB598009E4078 /* DataController.swift */,
+				F9C01746282CB240009E4078 /* BindingBtnDemo.swift */,
+				F9C0174D282CD5B7009E4078 /* StudentEntityDemo.swift */,
+			);
+			path = Project11_Bookworm;
 			sourceTree = "<group>";
 		};
 		F9F6F357281912AD003FD5E7 /* View */ = {
@@ -667,6 +690,7 @@
 				F90EFCB728236D3C00DC38AE /* AddActivityView.swift in Sources */,
 				F9F6F36D281A3BE9003FD5E7 /* Bundle-Decodable.swift in Sources */,
 				F9BAA3FC282A30A8008F21E6 /* CheckoutView.swift in Sources */,
+				F9C01747282CB240009E4078 /* BindingBtnDemo.swift in Sources */,
 				F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */,
 				F9A5761B280E5E2600866612 /* BetterRestContentView.swift in Sources */,
 				F9A5761F280E8CD800866612 /* SleepCalculator.mlmodel in Sources */,
@@ -688,6 +712,7 @@
 				F927B75A2817D11400637927 /* CodableView.swift in Sources */,
 				F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */,
 				F927B7562817C59D00637927 /* AppStorageView.swift in Sources */,
+				F9C01745282CAFF2009E4078 /* BookwormContentView.swift in Sources */,
 				F97ED39727F2D2470033C15C /* ContentView.swift in Sources */,
 				F9F6F37B281A828C003FD5E7 /* MissionListView.swift in Sources */,
 				F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */,
@@ -705,6 +730,7 @@
 				F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */,
 				F90EFC9D282103FD00DC38AE /* ImagePaintDemo.swift in Sources */,
 				F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */,
+				F9C0174E282CD5B7009E4078 /* StudentEntityDemo.swift in Sources */,
 				F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
@@ -712,6 +738,7 @@
 				F90EFCA5282116CB00DC38AE /* AnimatablePairDemo.swift in Sources */,
 				F90EFCA128210FEC00DC38AE /* BlendModeDemo.swift in Sources */,
 				F9F6F375281A6B54003FD5E7 /* AstronautView.swift in Sources */,
+				F9C0174C282CB598009E4078 /* DataController.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
@@ -723,6 +750,7 @@
 				F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */,
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
 				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
+				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
 				F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */,
 			);
@@ -1051,6 +1079,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9C01749282CB52A009E4078 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = F9C01749282CB52A009E4078 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F97ED38927F2D2470033C15C /* Project object */;
 }
