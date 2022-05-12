@@ -65,6 +65,9 @@
 		F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */; };
 		F9C0174C282CB598009E4078 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0174B282CB598009E4078 /* DataController.swift */; };
 		F9C0174E282CD5B7009E4078 /* StudentEntityDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0174D282CD5B7009E4078 /* StudentEntityDemo.swift */; };
+		F9C01750282CDC6F009E4078 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0174F282CDC6F009E4078 /* AddBookView.swift */; };
+		F9C01752282CDFED009E4078 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01751282CDFED009E4078 /* RatingView.swift */; };
+		F9C01754282D0780009E4078 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01753282D0780009E4078 /* EmojiRatingView.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -163,6 +166,9 @@
 		F9C01749282CB52A009E4078 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		F9C0174B282CB598009E4078 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F9C0174D282CD5B7009E4078 /* StudentEntityDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntityDemo.swift; sourceTree = "<group>"; };
+		F9C0174F282CDC6F009E4078 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		F9C01751282CDFED009E4078 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		F9C01753282D0780009E4078 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -469,6 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				F9C01744282CAFF2009E4078 /* BookwormContentView.swift */,
+				F9C0174F282CDC6F009E4078 /* AddBookView.swift */,
+				F9C01751282CDFED009E4078 /* RatingView.swift */,
+				F9C01753282D0780009E4078 /* EmojiRatingView.swift */,
 				F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */,
 				F9C0174B282CB598009E4078 /* DataController.swift */,
 				F9C01746282CB240009E4078 /* BindingBtnDemo.swift */,
@@ -698,6 +707,7 @@
 				F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */,
 				F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
+				F9C01752282CDFED009E4078 /* RatingView.swift in Sources */,
 				F9BAA3F6282A2C56008F21E6 /* DisabledDemo.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */,
@@ -725,6 +735,7 @@
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
 				F90EFCAB28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift in Sources */,
 				F90EFCB92823ACBB00DC38AE /* DetailActivityView.swift in Sources */,
+				F9C01750282CDC6F009E4078 /* AddBookView.swift in Sources */,
 				F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */,
 				F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */,
 				F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */,
@@ -746,6 +757,7 @@
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
 				F90EFCB228236A2B00DC38AE /* Activity.swift in Sources */,
 				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
+				F9C01754282D0780009E4078 /* EmojiRatingView.swift in Sources */,
 				F9C01742282B9641009E4078 /* Cupcake.swift in Sources */,
 				F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */,
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
