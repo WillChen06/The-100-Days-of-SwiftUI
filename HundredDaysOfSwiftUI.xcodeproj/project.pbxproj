@@ -68,6 +68,7 @@
 		F9C01750282CDC6F009E4078 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0174F282CDC6F009E4078 /* AddBookView.swift */; };
 		F9C01752282CDFED009E4078 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01751282CDFED009E4078 /* RatingView.swift */; };
 		F9C01754282D0780009E4078 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01753282D0780009E4078 /* EmojiRatingView.swift */; };
+		F9C01756282E30CB009E4078 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01755282E30CB009E4078 /* BookDetailView.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -169,6 +170,7 @@
 		F9C0174F282CDC6F009E4078 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		F9C01751282CDFED009E4078 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		F9C01753282D0780009E4078 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		F9C01755282E30CB009E4078 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -474,16 +476,41 @@
 		F9C01743282CAFD6009E4078 /* Project11_Bookworm */ = {
 			isa = PBXGroup;
 			children = (
-				F9C01744282CAFF2009E4078 /* BookwormContentView.swift */,
-				F9C0174F282CDC6F009E4078 /* AddBookView.swift */,
-				F9C01751282CDFED009E4078 /* RatingView.swift */,
-				F9C01753282D0780009E4078 /* EmojiRatingView.swift */,
-				F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */,
-				F9C0174B282CB598009E4078 /* DataController.swift */,
+				F9C01759282E3803009E4078 /* View */,
+				F9C01758282E37FC009E4078 /* DataModel */,
+				F9C01757282E37F5009E4078 /* Demo */,
+			);
+			path = Project11_Bookworm;
+			sourceTree = "<group>";
+		};
+		F9C01757282E37F5009E4078 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
 				F9C01746282CB240009E4078 /* BindingBtnDemo.swift */,
 				F9C0174D282CD5B7009E4078 /* StudentEntityDemo.swift */,
 			);
-			path = Project11_Bookworm;
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F9C01758282E37FC009E4078 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9C01748282CB52A009E4078 /* Bookworm.xcdatamodeld */,
+				F9C0174B282CB598009E4078 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F9C01759282E3803009E4078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9C01744282CAFF2009E4078 /* BookwormContentView.swift */,
+				F9C0174F282CDC6F009E4078 /* AddBookView.swift */,
+				F9C01755282E30CB009E4078 /* BookDetailView.swift */,
+				F9C01751282CDFED009E4078 /* RatingView.swift */,
+				F9C01753282D0780009E4078 /* EmojiRatingView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F9F6F357281912AD003FD5E7 /* View */ = {
@@ -758,6 +785,7 @@
 				F90EFCB228236A2B00DC38AE /* Activity.swift in Sources */,
 				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
 				F9C01754282D0780009E4078 /* EmojiRatingView.swift in Sources */,
+				F9C01756282E30CB009E4078 /* BookDetailView.swift in Sources */,
 				F9C01742282B9641009E4078 /* Cupcake.swift in Sources */,
 				F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */,
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
