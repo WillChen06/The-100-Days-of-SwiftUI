@@ -17,7 +17,7 @@ struct AddBookView: View {
     @State private var genre = ""
     @State private var review = ""
     
-    let genres = ["Fantasy", "Hottot", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
+    let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
     var body: some View {
         NavigationView {
@@ -29,8 +29,10 @@ struct AddBookView: View {
                     Picker("Genre", selection: $genre) {
                         ForEach(genres, id: \.self) {
                             Text($0)
+                                .foregroundColor(.primary)
                         }
                     }
+                    .foregroundColor(genre.isEmpty ? .red : .primary)
                 }
                 
                 Section {
@@ -50,14 +52,23 @@ struct AddBookView: View {
                         newBook.rating = Int16(rating)
                         newBook.genre = genre
                         newBook.review = review
+                        newBook.date = Date.now
                         
                         try? moc.save()
                         dismiss()
                     }
+                    .disabled(!isValidateInput())
                 }
             }
             .navigationTitle("Add Book")
         }
+    }
+    
+    func isValidateInput() -> Bool {
+        if title.isEmpty || author.isEmpty || genre.isEmpty || review.isEmpty {
+            return false
+        }
+        return true
     }
 }
 
