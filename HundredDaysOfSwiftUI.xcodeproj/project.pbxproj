@@ -102,6 +102,7 @@
 		F9F8AB812833881D00177C5C /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F8AB7D2833881D00177C5C /* Country+CoreDataProperties.swift */; };
 		F9F8AB822833881D00177C5C /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F8AB7E2833881D00177C5C /* Candy+CoreDataClass.swift */; };
 		F9F8AB832833881D00177C5C /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F8AB7F2833881D00177C5C /* Candy+CoreDataProperties.swift */; };
+		F9F8AB852834C00F00177C5C /* PredicateWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F8AB842834C00E00177C5C /* PredicateWay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +222,7 @@
 		F9F8AB7D2833881D00177C5C /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F9F8AB7E2833881D00177C5C /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F9F8AB7F2833881D00177C5C /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9F8AB842834C00E00177C5C /* PredicateWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateWay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -552,13 +554,9 @@
 			isa = PBXGroup;
 			children = (
 				F9C0175B28323660009E4078 /* CoreDataContentView.swift */,
-				F9F8AB782833794000177C5C /* FilteredList.swift */,
-				F9F8AB7A283386A500177C5C /* DynamicallyFilteringDemo.swift */,
-				F9C0176328323A6B009E4078 /* HashableDemo.swift */,
-				F9F8AB702833738A00177C5C /* MergePolicyDemo.swift */,
-				F9F8AB722833773700177C5C /* NSPredicateDemo.swift */,
-				F9C0176928323D84009E4078 /* MocConditionalSaveDemo.swift */,
+				F9F8AB862834CC2C00177C5C /* DynamicallyFiltering */,
 				F9C01762283237E2009E4078 /* DataModel */,
+				F9F8AB872834CC4000177C5C /* Demo */,
 			);
 			path = Project12_CoreData;
 			sourceTree = "<group>";
@@ -655,6 +653,27 @@
 				F9F6F370281A4497003FD5E7 /* Color-Theme.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F9F8AB862834CC2C00177C5C /* DynamicallyFiltering */ = {
+			isa = PBXGroup;
+			children = (
+				F9F8AB782833794000177C5C /* FilteredList.swift */,
+				F9F8AB842834C00E00177C5C /* PredicateWay.swift */,
+				F9F8AB7A283386A500177C5C /* DynamicallyFilteringDemo.swift */,
+			);
+			path = DynamicallyFiltering;
+			sourceTree = "<group>";
+		};
+		F9F8AB872834CC4000177C5C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F9C0176328323A6B009E4078 /* HashableDemo.swift */,
+				F9F8AB702833738A00177C5C /* MergePolicyDemo.swift */,
+				F9F8AB722833773700177C5C /* NSPredicateDemo.swift */,
+				F9C0176928323D84009E4078 /* MocConditionalSaveDemo.swift */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -877,6 +896,7 @@
 				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
 				F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */,
+				F9F8AB852834C00F00177C5C /* PredicateWay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
