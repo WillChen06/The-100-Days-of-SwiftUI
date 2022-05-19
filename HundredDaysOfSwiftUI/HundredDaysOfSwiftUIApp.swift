@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct HundredDaysOfSwiftUIApp: App {
-    @StateObject private var dataController = Project12DataController()
     
     var body: some Scene {
         WindowGroup {
-            CoreDataContentView()
-                .environment(\.managedObjectContext, dataController.container.viewContext)
+            FriendFaceContentView()
         }
     }
 }

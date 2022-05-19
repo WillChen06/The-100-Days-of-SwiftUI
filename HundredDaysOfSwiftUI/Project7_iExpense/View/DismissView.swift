@@ -8,7 +8,7 @@
 import SwiftUI
 
 // @StateObject
-//class User: ObservableObject {
+//class IExpenseUser: ObservableObject {
 //    @Published var firstName = "Bilbo"
 //    @Published var lastName = "Baggins"
 //}
