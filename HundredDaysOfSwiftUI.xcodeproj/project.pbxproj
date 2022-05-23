@@ -40,6 +40,9 @@
 		F97ED3B227F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */; };
 		F99F3D61283B5A7C009106FA /* InstafilterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */; };
 		F99F3D63283B61FC009106FA /* OnChangedDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D62283B61FC009106FA /* OnChangedDemo.swift */; };
+		F99F3D65283B668F009106FA /* ConfirmationDialogDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */; };
+		F99F3D67283B6BE0009106FA /* CoreImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */; };
+		F99F3D69283B6DB9009106FA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D68283B6DB9009106FA /* ImagePicker.swift */; };
 		F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */; };
 		F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */; };
 		F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */; };
@@ -172,6 +175,9 @@
 		F97ED3BF27F2DB6E0033C15C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterContentView.swift; sourceTree = "<group>"; };
 		F99F3D62283B61FC009106FA /* OnChangedDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnChangedDemo.swift; sourceTree = "<group>"; };
+		F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogDemo.swift; sourceTree = "<group>"; };
+		F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageDemo.swift; sourceTree = "<group>"; };
+		F99F3D68283B6DB9009106FA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOneContentView.swift; sourceTree = "<group>"; };
 		F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagContentView.swift; sourceTree = "<group>"; };
 		F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersContentView.swift; sourceTree = "<group>"; };
@@ -423,7 +429,10 @@
 			isa = PBXGroup;
 			children = (
 				F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */,
+				F99F3D68283B6DB9009106FA /* ImagePicker.swift */,
 				F99F3D62283B61FC009106FA /* OnChangedDemo.swift */,
+				F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */,
+				F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */,
 			);
 			path = Project13_Instafilter;
 			sourceTree = "<group>";
@@ -917,6 +926,7 @@
 				F9F6F37B281A828C003FD5E7 /* MissionListView.swift in Sources */,
 				F9F6F36328192FCC003FD5E7 /* ScrollingGridView.swift in Sources */,
 				F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */,
+				F99F3D65283B668F009106FA /* ConfirmationDialogDemo.swift in Sources */,
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
 				F9BAA3F8282A2D61008F21E6 /* Order.swift in Sources */,
 				F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */,
@@ -930,6 +940,7 @@
 				F9F8AB792833794000177C5C /* FilteredList.swift in Sources */,
 				F90EFCB92823ACBB00DC38AE /* DetailActivityView.swift in Sources */,
 				F9C0176A28323D84009E4078 /* MocConditionalSaveDemo.swift in Sources */,
+				F99F3D69283B6DB9009106FA /* ImagePicker.swift in Sources */,
 				F9C01750282CDC6F009E4078 /* AddBookView.swift in Sources */,
 				F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */,
 				F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */,
@@ -975,6 +986,7 @@
 				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
 				F9F8AB8D28360D4200177C5C /* Friend.swift in Sources */,
+				F99F3D67283B6BE0009106FA /* CoreImageDemo.swift in Sources */,
 				F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */,
 				F9F8AB852834C00F00177C5C /* PredicateWay.swift in Sources */,
 			);
