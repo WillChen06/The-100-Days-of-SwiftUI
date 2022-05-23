@@ -38,6 +38,8 @@
 		F97ED3A627F2D2490033C15C /* HundredDaysOfSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED3A527F2D2490033C15C /* HundredDaysOfSwiftUITests.swift */; };
 		F97ED3B027F2D2490033C15C /* HundredDaysOfSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED3AF27F2D2490033C15C /* HundredDaysOfSwiftUIUITests.swift */; };
 		F97ED3B227F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */; };
+		F99F3D61283B5A7C009106FA /* InstafilterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */; };
+		F99F3D63283B61FC009106FA /* OnChangedDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D62283B61FC009106FA /* OnChangedDemo.swift */; };
 		F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */; };
 		F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */; };
 		F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */; };
@@ -168,6 +170,8 @@
 		F97ED3AF27F2D2490033C15C /* HundredDaysOfSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredDaysOfSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F97ED3BF27F2DB6E0033C15C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterContentView.swift; sourceTree = "<group>"; };
+		F99F3D62283B61FC009106FA /* OnChangedDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnChangedDemo.swift; sourceTree = "<group>"; };
 		F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOneContentView.swift; sourceTree = "<group>"; };
 		F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagContentView.swift; sourceTree = "<group>"; };
 		F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersContentView.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 				F9C01743282CAFD6009E4078 /* Project11_Bookworm */,
 				F9C0175A2832364E009E4078 /* Project12_CoreData */,
 				F9F8AB882835F4F700177C5C /* Challenge5 */,
+				F99F3D5F283B5A63009106FA /* Project13_Instafilter */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -412,6 +417,15 @@
 				F97ED3B127F2D2490033C15C /* HundredDaysOfSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = HundredDaysOfSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		F99F3D5F283B5A63009106FA /* Project13_Instafilter */ = {
+			isa = PBXGroup;
+			children = (
+				F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */,
+				F99F3D62283B61FC009106FA /* OnChangedDemo.swift */,
+			);
+			path = Project13_Instafilter;
 			sourceTree = "<group>";
 		};
 		F99FC3F728054C430054CAF7 /* Project1_WeSplit */ = {
@@ -941,6 +955,7 @@
 				F9C0174C282CB598009E4078 /* DataController.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9F8AB832833881D00177C5C /* Candy+CoreDataProperties.swift in Sources */,
+				F99F3D63283B61FC009106FA /* OnChangedDemo.swift in Sources */,
 				F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
 				F9F8AB822833881D00177C5C /* Candy+CoreDataClass.swift in Sources */,
@@ -956,6 +971,7 @@
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
 				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
 				F9EF99E0283768E5005DBC91 /* FriendFace.xcdatamodeld in Sources */,
+				F99F3D61283B5A7C009106FA /* InstafilterContentView.swift in Sources */,
 				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
 				F9F8AB8D28360D4200177C5C /* Friend.swift in Sources */,
