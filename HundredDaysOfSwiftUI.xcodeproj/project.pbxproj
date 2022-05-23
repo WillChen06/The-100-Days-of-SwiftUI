@@ -44,6 +44,7 @@
 		F99F3D67283B6BE0009106FA /* CoreImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */; };
 		F99F3D69283B6DB9009106FA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D68283B6DB9009106FA /* ImagePicker.swift */; };
 		F99F3D6B283B7CEE009106FA /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D6A283B7CEE009106FA /* ImageSaver.swift */; };
+		F99F3D6D283B81EF009106FA /* IntergrateUIKitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D6C283B81EF009106FA /* IntergrateUIKitDemo.swift */; };
 		F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */; };
 		F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */; };
 		F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */; };
@@ -180,6 +181,7 @@
 		F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageDemo.swift; sourceTree = "<group>"; };
 		F99F3D68283B6DB9009106FA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F99F3D6A283B7CEE009106FA /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		F99F3D6C283B81EF009106FA /* IntergrateUIKitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntergrateUIKitDemo.swift; sourceTree = "<group>"; };
 		F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOneContentView.swift; sourceTree = "<group>"; };
 		F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagContentView.swift; sourceTree = "<group>"; };
 		F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersContentView.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 				F99F3D62283B61FC009106FA /* OnChangedDemo.swift */,
 				F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */,
 				F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */,
+				F99F3D6C283B81EF009106FA /* IntergrateUIKitDemo.swift */,
 			);
 			path = Project13_Instafilter;
 			sourceTree = "<group>";
@@ -892,6 +895,7 @@
 				F90EFCB728236D3C00DC38AE /* AddActivityView.swift in Sources */,
 				F9C0175C28323660009E4078 /* CoreDataContentView.swift in Sources */,
 				F9F6F36D281A3BE9003FD5E7 /* Bundle-Decodable.swift in Sources */,
+				F99F3D6D283B81EF009106FA /* IntergrateUIKitDemo.swift in Sources */,
 				F9BAA3FC282A30A8008F21E6 /* CheckoutView.swift in Sources */,
 				F9F8AB8F28360DC300177C5C /* FriendFaceContentView.swift in Sources */,
 				F9C01747282CB240009E4078 /* BindingBtnDemo.swift in Sources */,
