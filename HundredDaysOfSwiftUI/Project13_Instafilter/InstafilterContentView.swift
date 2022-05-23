@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InstafilterContentView: View {
     @State private var image: Image?
+    @State private var inputImage: UIImage?
     @State private var showingImgaePicker = false
     
     var body: some View {
@@ -20,10 +21,25 @@ struct InstafilterContentView: View {
             Button("Select Image") {
                 showingImgaePicker = true
             }
-            .sheet(isPresented: $showingImgaePicker) {
-                ImagePicker()
+            
+            Button("Save Image") {
+                guard let inputImage = inputImage else { return }
+
+                let imageSaver = ImageSaver()
+                imageSaver.writeToPhotoAlbum(image: inputImage)
             }
         }
+        .sheet(isPresented: $showingImgaePicker) {
+            ImagePicker(image: $inputImage)
+        }
+        .onChange(of: inputImage) { _ in
+            loadImage()
+        }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
 }
 

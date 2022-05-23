@@ -43,6 +43,7 @@
 		F99F3D65283B668F009106FA /* ConfirmationDialogDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */; };
 		F99F3D67283B6BE0009106FA /* CoreImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */; };
 		F99F3D69283B6DB9009106FA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D68283B6DB9009106FA /* ImagePicker.swift */; };
+		F99F3D6B283B7CEE009106FA /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F3D6A283B7CEE009106FA /* ImageSaver.swift */; };
 		F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */; };
 		F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */; };
 		F99FC4002807FEB80054CAF7 /* ViewsAndModifiersContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */; };
@@ -178,6 +179,7 @@
 		F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogDemo.swift; sourceTree = "<group>"; };
 		F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageDemo.swift; sourceTree = "<group>"; };
 		F99F3D68283B6DB9009106FA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F99F3D6A283B7CEE009106FA /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		F99FC3F928054E6A0054CAF7 /* ChallengeOneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOneContentView.swift; sourceTree = "<group>"; };
 		F99FC3FC2806740F0054CAF7 /* GuessTheFlagContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagContentView.swift; sourceTree = "<group>"; };
 		F99FC3FF2807FEB70054CAF7 /* ViewsAndModifiersContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersContentView.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 			children = (
 				F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */,
 				F99F3D68283B6DB9009106FA /* ImagePicker.swift */,
+				F99F3D6A283B7CEE009106FA /* ImageSaver.swift */,
 				F99F3D62283B61FC009106FA /* OnChangedDemo.swift */,
 				F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */,
 				F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */,
@@ -909,6 +912,7 @@
 				F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */,
 				F90EFCB02823698600DC38AE /* HabitTrackingContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
+				F99F3D6B283B7CEE009106FA /* ImageSaver.swift in Sources */,
 				F9EF99F728378688005DBC91 /* CachedFriend+CoreDataClass.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
@@ -1150,6 +1154,7 @@
 				DEVELOPMENT_TEAM = 4YL95KDQ6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save yout filtered photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1180,6 +1185,7 @@
 				DEVELOPMENT_TEAM = 4YL95KDQ6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save yout filtered photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
