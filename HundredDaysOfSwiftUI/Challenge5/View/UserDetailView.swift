@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserDetailView: View {
-    var user: User
+    var user: CachedUser
     
     var body: some View {
         GeometryReader { geometry in
@@ -18,19 +18,19 @@ struct UserDetailView: View {
                         Color(user.isActive ? .green : .red)
                             .clipShape(Circle())
                             .frame(width: 16, height: 16)
-                        Text("\(user.name)(\(user.age))")
+                        Text("\(user.wrappedName)(\(user.age))")
                             .font(.largeTitle)
                     }
-                    Text(user.email)
+                    Text(user.wrappedEmail)
                         .font(.headline)
-                    Text(user.company)
+                    Text(user.wrappedEmail)
                     Divider()
                         .padding([.leading, .trailing])
-                    Text(user.about)
+                    Text(user.wrappedAbout)
                         .padding()
                     
                     DisclosureGroup("Tags") {
-                        ForEach(user.tags, id: \.self) { tag in
+                        ForEach(user.tagArray, id: \.self) { tag in
                             Text(tag)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
@@ -38,8 +38,8 @@ struct UserDetailView: View {
                     .padding([.leading, .trailing])
                     
                     DisclosureGroup("Friends") {
-                        ForEach(user.friends, id: \.id) { friend in
-                            Text(friend.name)
+                        ForEach(user.friendArray, id: \.id) { friend in
+                            Text(friend.wrappedName)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     }
@@ -47,7 +47,7 @@ struct UserDetailView: View {
                     
                     Spacer()
                     
-                    Text(user.registered.formatted(date: .abbreviated, time: .standard))
+                    Text(user.wrappedRegistered.formatted(date: .abbreviated, time: .standard))
                         .frame(maxWidth: .infinity, alignment: .bottomTrailing)
                         .padding([.bottom, .trailing])
                 }
@@ -58,8 +58,8 @@ struct UserDetailView: View {
     }
 }
 
-struct UserDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserDetailView(user: User.example)
-    }
-}
+//struct UserDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserDetailView(user: User.example)
+//    }
+//}

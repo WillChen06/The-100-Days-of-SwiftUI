@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct FriendFaceContentView: View {
-    @State private var users: [User] = []
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.age),
+        SortDescriptor(\.name)
+    ]) var users: FetchedResults<CachedUser>
     
     var body: some View {
         NavigationView {
@@ -20,7 +24,7 @@ struct FriendFaceContentView: View {
                         Color(user.isActive ? .green : .red)
                             .clipShape(Circle())
                             .frame(width: 16, height: 16)
-                        Text(user.name)
+                        Text(user.wrappedName)
                     }
                     
                 }
@@ -29,7 +33,7 @@ struct FriendFaceContentView: View {
         }
         .onAppear {
             if users.isEmpty {
-                Task {
+                Task { @MainActor in
                     await loadFriendFace()
                 }
             }
@@ -48,10 +52,38 @@ struct FriendFaceContentView: View {
             decoder.dateDecodingStrategy = .iso8601
             let decoded = try decoder.decode([User].self, from: data)
             print("Get decoded data: \(decoded.count)")
-            users = decoded
+            save(users: decoded)
         } catch {
             print("Download json file error : \(error.localizedDescription)")
         }
+    }
+    
+    func save(users: [User]) {
+        for user in users {
+            let cachedUser = CachedUser(context: moc)
+            cachedUser.id = user.id
+            cachedUser.isActive = user.isActive
+            cachedUser.name = user.name
+            cachedUser.age = Int16(user.age)
+            cachedUser.company = user.company
+            cachedUser.email = user.email
+            cachedUser.address = user.address
+            cachedUser.about = user.about
+            cachedUser.registered = user.registered
+            cachedUser.tags = user.tags.joined(separator: ",")
+            
+            var result: [CachedFriend] = []
+            for friend in user.friends {
+                let cachedFriend = CachedFriend(context: moc)
+                cachedFriend.id = friend.id
+                cachedFriend.name = friend.name
+                cachedFriend.origin = cachedUser
+                result.append(cachedFriend)
+            }
+            cachedUser.friends = NSSet(array: result)
+        }
+        
+        try? moc.save()
     }
 }
 

@@ -76,6 +76,12 @@
 		F9C0176728323B58009E4078 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0176528323B58009E4078 /* Movie+CoreDataClass.swift */; };
 		F9C0176828323B58009E4078 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0176628323B58009E4078 /* Movie+CoreDataProperties.swift */; };
 		F9C0176A28323D84009E4078 /* MocConditionalSaveDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0176928323D84009E4078 /* MocConditionalSaveDemo.swift */; };
+		F9EF99E0283768E5005DBC91 /* FriendFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99DE283768E5005DBC91 /* FriendFace.xcdatamodeld */; };
+		F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */; };
+		F9EF99F728378688005DBC91 /* CachedFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */; };
+		F9EF99F828378688005DBC91 /* CachedFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99F428378688005DBC91 /* CachedFriend+CoreDataProperties.swift */; };
+		F9EF99F928378688005DBC91 /* CachedUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99F528378688005DBC91 /* CachedUser+CoreDataClass.swift */; };
+		F9EF99FA28378688005DBC91 /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99F628378688005DBC91 /* CachedUser+CoreDataProperties.swift */; };
 		F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */; };
 		F9F6F35D28192A46003FD5E7 /* LazyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */; };
 		F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */; };
@@ -200,6 +206,12 @@
 		F9C0176528323B58009E4078 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F9C0176628323B58009E4078 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F9C0176928323D84009E4078 /* MocConditionalSaveDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocConditionalSaveDemo.swift; sourceTree = "<group>"; };
+		F9EF99DF283768E5005DBC91 /* FriendFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendFace.xcdatamodel; sourceTree = "<group>"; };
+		F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceDataController.swift; sourceTree = "<group>"; };
+		F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9EF99F428378688005DBC91 /* CachedFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9EF99F528378688005DBC91 /* CachedUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F9EF99F628378688005DBC91 /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F9F6F35A281921B1003FD5E7 /* MoonshotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotContentView.swift; sourceTree = "<group>"; };
 		F9F6F35C28192A46003FD5E7 /* LazyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyScrollView.swift; sourceTree = "<group>"; };
 		F9F6F35E28192CD9003FD5E7 /* NavigationLinkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemoView.swift; sourceTree = "<group>"; };
@@ -708,6 +720,12 @@
 			children = (
 				F9F8AB8A2835F5CF00177C5C /* User.swift */,
 				F9F8AB8C28360D4200177C5C /* Friend.swift */,
+				F9EF99DE283768E5005DBC91 /* FriendFace.xcdatamodeld */,
+				F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */,
+				F9EF99F428378688005DBC91 /* CachedFriend+CoreDataProperties.swift */,
+				F9EF99F528378688005DBC91 /* CachedUser+CoreDataClass.swift */,
+				F9EF99F628378688005DBC91 /* CachedUser+CoreDataProperties.swift */,
+				F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -868,6 +886,7 @@
 				F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */,
 				F90EFCB02823698600DC38AE /* HabitTrackingContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
+				F9EF99F728378688005DBC91 /* CachedFriend+CoreDataClass.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
 				F9BAA3F02828F252008F21E6 /* CodableClassExample.swift in Sources */,
@@ -887,6 +906,7 @@
 				F99FC3FA28054E6A0054CAF7 /* ChallengeOneContentView.swift in Sources */,
 				F9BAA3F8282A2D61008F21E6 /* Order.swift in Sources */,
 				F9F6F36F281A3E57003FD5E7 /* Mission.swift in Sources */,
+				F9EF99F828378688005DBC91 /* CachedFriend+CoreDataProperties.swift in Sources */,
 				F9BAA3FA282A2FEF008F21E6 /* AddressView.swift in Sources */,
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
@@ -905,10 +925,13 @@
 				F9C0174E282CD5B7009E4078 /* StudentEntityDemo.swift in Sources */,
 				F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
+				F9EF99FA28378688005DBC91 /* CachedUser+CoreDataProperties.swift in Sources */,
 				F9C0176128323773009E4078 /* Project12DataController.swift in Sources */,
 				F9F8AB812833881D00177C5C /* Country+CoreDataProperties.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
+				F9EF99F928378688005DBC91 /* CachedUser+CoreDataClass.swift in Sources */,
+				F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */,
 				F9F8AB8B2835F5CF00177C5C /* User.swift in Sources */,
 				F90EFCA5282116CB00DC38AE /* AnimatablePairDemo.swift in Sources */,
 				F9C0176828323B58009E4078 /* Movie+CoreDataProperties.swift in Sources */,
@@ -932,6 +955,7 @@
 				F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */,
 				F90EFC9F2821069B00DC38AE /* ColorCyclingCircle.swift in Sources */,
 				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
+				F9EF99E0283768E5005DBC91 /* FriendFace.xcdatamodeld in Sources */,
 				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
 				F9F8AB8D28360D4200177C5C /* Friend.swift in Sources */,
@@ -1282,6 +1306,16 @@
 			);
 			currentVersion = F9C0175E28323680009E4078 /* CoreDataProject.xcdatamodel */;
 			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F9EF99DE283768E5005DBC91 /* FriendFace.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9EF99DF283768E5005DBC91 /* FriendFace.xcdatamodel */,
+			);
+			currentVersion = F9EF99DF283768E5005DBC91 /* FriendFace.xcdatamodel */;
+			path = FriendFace.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
