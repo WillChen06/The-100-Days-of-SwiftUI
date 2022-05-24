@@ -435,12 +435,20 @@
 				F99F3D60283B5A7C009106FA /* InstafilterContentView.swift */,
 				F99F3D68283B6DB9009106FA /* ImagePicker.swift */,
 				F99F3D6A283B7CEE009106FA /* ImageSaver.swift */,
+				F99F3D6E283CAC00009106FA /* Demo */,
+			);
+			path = Project13_Instafilter;
+			sourceTree = "<group>";
+		};
+		F99F3D6E283CAC00009106FA /* Demo */ = {
+			isa = PBXGroup;
+			children = (
 				F99F3D62283B61FC009106FA /* OnChangedDemo.swift */,
 				F99F3D64283B668F009106FA /* ConfirmationDialogDemo.swift */,
 				F99F3D66283B6BE0009106FA /* CoreImageDemo.swift */,
 				F99F3D6C283B81EF009106FA /* IntergrateUIKitDemo.swift */,
 			);
-			path = Project13_Instafilter;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		F99FC3F728054C430054CAF7 /* Project1_WeSplit */ = {

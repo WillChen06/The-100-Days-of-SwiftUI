@@ -12,6 +12,7 @@ import SwiftUI
 struct InstafilterContentView: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 0.5
     
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
@@ -41,14 +42,27 @@ struct InstafilterContentView: View {
                     showingImagePicker = true
                 }
                 
-                HStack {
-                    Text("Intensity")
-                    Slider(value: $filterIntensity)
-                        .onChange(of: filterIntensity) { _ in
-                            applyProcessing()
-                        }
+                VStack {
+                    HStack {
+                        Text("Intensity")
+                            .frame(width: 80, alignment: .leading)
+                        Slider(value: $filterIntensity)
+                            .onChange(of: filterIntensity) { _ in
+                                applyProcessing()
+                            }
+                    }
+                    
+                    HStack {
+                        Text("Radius")
+                            .frame(width: 80, alignment: .leading)
+                        Slider(value: $filterRadius)
+                            .onChange(of: filterRadius) { _ in
+                                applyProcessing()
+                            }
+                    }
                 }
                 .padding(.vertical)
+                
                 
                 HStack {
                     Button("Change Filter") {
@@ -58,6 +72,7 @@ struct InstafilterContentView: View {
                     Spacer()
                     
                     Button("Save", action: save)
+                        .disabled(image == nil)
                 }
             }
             .padding([.horizontal, .bottom])
@@ -114,7 +129,7 @@ struct InstafilterContentView: View {
         }
         
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)
+            currentFilter.setValue(filterRadius * 200, forKey: kCIInputRadiusKey)
         }
         
         if inputKeys.contains(kCIInputScaleKey) {
