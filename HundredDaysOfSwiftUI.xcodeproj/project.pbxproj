@@ -83,6 +83,9 @@
 		F9C0176728323B58009E4078 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0176528323B58009E4078 /* Movie+CoreDataClass.swift */; };
 		F9C0176828323B58009E4078 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0176628323B58009E4078 /* Movie+CoreDataProperties.swift */; };
 		F9C0176A28323D84009E4078 /* MocConditionalSaveDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0176928323D84009E4078 /* MocConditionalSaveDemo.swift */; };
+		F9C0D461283E10710007C890 /* BucketListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0D460283E10710007C890 /* BucketListContentView.swift */; };
+		F9C0D463283E19D10007C890 /* ComparableDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0D462283E19D10007C890 /* ComparableDemo.swift */; };
+		F9C0D465283E1DF00007C890 /* WriteDataToDocumentsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */; };
 		F9EF99E0283768E5005DBC91 /* FriendFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99DE283768E5005DBC91 /* FriendFace.xcdatamodeld */; };
 		F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */; };
 		F9EF99F728378688005DBC91 /* CachedFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */; };
@@ -220,6 +223,9 @@
 		F9C0176528323B58009E4078 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F9C0176628323B58009E4078 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F9C0176928323D84009E4078 /* MocConditionalSaveDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocConditionalSaveDemo.swift; sourceTree = "<group>"; };
+		F9C0D460283E10710007C890 /* BucketListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListContentView.swift; sourceTree = "<group>"; };
+		F9C0D462283E19D10007C890 /* ComparableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableDemo.swift; sourceTree = "<group>"; };
+		F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDataToDocumentsDemo.swift; sourceTree = "<group>"; };
 		F9EF99DF283768E5005DBC91 /* FriendFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendFace.xcdatamodel; sourceTree = "<group>"; };
 		F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceDataController.swift; sourceTree = "<group>"; };
 		F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -398,6 +404,7 @@
 				F9C0175A2832364E009E4078 /* Project12_CoreData */,
 				F9F8AB882835F4F700177C5C /* Challenge5 */,
 				F99F3D5F283B5A63009106FA /* Project13_Instafilter */,
+				F9C0D45F283E10500007C890 /* Project14_BucketList */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -634,6 +641,16 @@
 				F9C0176028323773009E4078 /* Project12DataController.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F9C0D45F283E10500007C890 /* Project14_BucketList */ = {
+			isa = PBXGroup;
+			children = (
+				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
+				F9C0D462283E19D10007C890 /* ComparableDemo.swift */,
+				F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */,
+			);
+			path = Project14_BucketList;
 			sourceTree = "<group>";
 		};
 		F9EF99DD28362D98005DBC91 /* View */ = {
@@ -918,6 +935,7 @@
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
 				F9C0176728323B58009E4078 /* Movie+CoreDataClass.swift in Sources */,
 				F9C01752282CDFED009E4078 /* RatingView.swift in Sources */,
+				F9C0D461283E10710007C890 /* BucketListContentView.swift in Sources */,
 				F9BAA3F6282A2C56008F21E6 /* DisabledDemo.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F9F8AB762833785900177C5C /* Singer+CoreDataClass.swift in Sources */,
@@ -957,6 +975,7 @@
 				F90EFCB92823ACBB00DC38AE /* DetailActivityView.swift in Sources */,
 				F9C0176A28323D84009E4078 /* MocConditionalSaveDemo.swift in Sources */,
 				F99F3D69283B6DB9009106FA /* ImagePicker.swift in Sources */,
+				F9C0D463283E19D10007C890 /* ComparableDemo.swift in Sources */,
 				F9C01750282CDC6F009E4078 /* AddBookView.swift in Sources */,
 				F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */,
 				F90EFCA32821141A00DC38AE /* AnimatableDataDemo.swift in Sources */,
@@ -970,6 +989,7 @@
 				F9C0176128323773009E4078 /* Project12DataController.swift in Sources */,
 				F9F8AB812833881D00177C5C /* Country+CoreDataProperties.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
+				F9C0D465283E1DF00007C890 /* WriteDataToDocumentsDemo.swift in Sources */,
 				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
 				F9EF99F928378688005DBC91 /* CachedUser+CoreDataClass.swift in Sources */,
 				F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */,
