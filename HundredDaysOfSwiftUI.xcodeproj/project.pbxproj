@@ -86,6 +86,8 @@
 		F9C0D461283E10710007C890 /* BucketListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0D460283E10710007C890 /* BucketListContentView.swift */; };
 		F9C0D463283E19D10007C890 /* ComparableDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0D462283E19D10007C890 /* ComparableDemo.swift */; };
 		F9C0D465283E1DF00007C890 /* WriteDataToDocumentsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */; };
+		F9C17082283F4F5E000EB0B9 /* StateWithEnumDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C17081283F4F5E000EB0B9 /* StateWithEnumDemo.swift */; };
+		F9C17084283F52F9000EB0B9 /* MapKitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */; };
 		F9EF99E0283768E5005DBC91 /* FriendFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99DE283768E5005DBC91 /* FriendFace.xcdatamodeld */; };
 		F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */; };
 		F9EF99F728378688005DBC91 /* CachedFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */; };
@@ -226,6 +228,8 @@
 		F9C0D460283E10710007C890 /* BucketListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListContentView.swift; sourceTree = "<group>"; };
 		F9C0D462283E19D10007C890 /* ComparableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableDemo.swift; sourceTree = "<group>"; };
 		F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDataToDocumentsDemo.swift; sourceTree = "<group>"; };
+		F9C17081283F4F5E000EB0B9 /* StateWithEnumDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateWithEnumDemo.swift; sourceTree = "<group>"; };
+		F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitDemo.swift; sourceTree = "<group>"; };
 		F9EF99DF283768E5005DBC91 /* FriendFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendFace.xcdatamodel; sourceTree = "<group>"; };
 		F9EF99E928376FD1005DBC91 /* FriendFaceDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceDataController.swift; sourceTree = "<group>"; };
 		F9EF99F328378688005DBC91 /* CachedFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -647,8 +651,10 @@
 			isa = PBXGroup;
 			children = (
 				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
+				F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */,
 				F9C0D462283E19D10007C890 /* ComparableDemo.swift */,
 				F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */,
+				F9C17081283F4F5E000EB0B9 /* StateWithEnumDemo.swift */,
 			);
 			path = Project14_BucketList;
 			sourceTree = "<group>";
@@ -991,6 +997,7 @@
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F9C0D465283E1DF00007C890 /* WriteDataToDocumentsDemo.swift in Sources */,
 				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
+				F9C17084283F52F9000EB0B9 /* MapKitDemo.swift in Sources */,
 				F9EF99F928378688005DBC91 /* CachedUser+CoreDataClass.swift in Sources */,
 				F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */,
 				F9F8AB8B2835F5CF00177C5C /* User.swift in Sources */,
@@ -1008,6 +1015,7 @@
 				F9F8AB822833881D00177C5C /* Candy+CoreDataClass.swift in Sources */,
 				F9BAA3EC2828F1E4008F21E6 /* URLSessionDemo.swift in Sources */,
 				F9A576292811039200866612 /* OverlayButton.swift in Sources */,
+				F9C17082283F4F5E000EB0B9 /* StateWithEnumDemo.swift in Sources */,
 				F90EFCB228236A2B00DC38AE /* Activity.swift in Sources */,
 				F9F6F35F28192CD9003FD5E7 /* NavigationLinkDemoView.swift in Sources */,
 				F9F8AB802833881D00177C5C /* Country+CoreDataClass.swift in Sources */,
@@ -1186,6 +1194,7 @@
 				DEVELOPMENT_TEAM = 4YL95KDQ6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save yout filtered photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1217,6 +1226,7 @@
 				DEVELOPMENT_TEAM = 4YL95KDQ6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save yout filtered photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
