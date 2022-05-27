@@ -58,6 +58,9 @@
 		F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762A281105E000866612 /* StepperAnimation.swift */; };
 		F9A5762D281134E800866612 /* WordDragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762C281134E800866612 /* WordDragging.swift */; };
 		F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5762F2812531000866612 /* EdutainmentContentView.swift */; };
+		F9B8274828406A50005CD32A /* BiometricsLoginDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */; };
+		F9B8274A28406BC9005CD32A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8274928406BC9005CD32A /* Location.swift */; };
+		F9B8274E28407204005CD32A /* MapEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8274D28407204005CD32A /* MapEditView.swift */; };
 		F9BAA3EA2828BCC1008F21E6 /* CupcakeCornerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3E92828BCC1008F21E6 /* CupcakeCornerContentView.swift */; };
 		F9BAA3EC2828F1E4008F21E6 /* URLSessionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */; };
 		F9BAA3F02828F252008F21E6 /* CodableClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */; };
@@ -200,6 +203,9 @@
 		F9A5762A281105E000866612 /* StepperAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAnimation.swift; sourceTree = "<group>"; };
 		F9A5762C281134E800866612 /* WordDragging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDragging.swift; sourceTree = "<group>"; };
 		F9A5762F2812531000866612 /* EdutainmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdutainmentContentView.swift; sourceTree = "<group>"; };
+		F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsLoginDemo.swift; sourceTree = "<group>"; };
+		F9B8274928406BC9005CD32A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F9B8274D28407204005CD32A /* MapEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEditView.swift; sourceTree = "<group>"; };
 		F9BAA3E92828BCC1008F21E6 /* CupcakeCornerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerContentView.swift; sourceTree = "<group>"; };
 		F9BAA3EB2828F1E4008F21E6 /* URLSessionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDemo.swift; sourceTree = "<group>"; };
 		F9BAA3EF2828F252008F21E6 /* CodableClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableClassExample.swift; sourceTree = "<group>"; };
@@ -651,6 +657,9 @@
 			isa = PBXGroup;
 			children = (
 				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
+				F9B8274D28407204005CD32A /* MapEditView.swift */,
+				F9B8274928406BC9005CD32A /* Location.swift */,
+				F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */,
 				F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */,
 				F9C0D462283E19D10007C890 /* ComparableDemo.swift */,
 				F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */,
@@ -937,11 +946,13 @@
 				F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */,
 				F9F8AB7B283386A500177C5C /* DynamicallyFilteringDemo.swift in Sources */,
 				F9C0176428323A6B009E4078 /* HashableDemo.swift in Sources */,
+				F9B8274828406A50005CD32A /* BiometricsLoginDemo.swift in Sources */,
 				F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
 				F9C0176728323B58009E4078 /* Movie+CoreDataClass.swift in Sources */,
 				F9C01752282CDFED009E4078 /* RatingView.swift in Sources */,
 				F9C0D461283E10710007C890 /* BucketListContentView.swift in Sources */,
+				F9B8274E28407204005CD32A /* MapEditView.swift in Sources */,
 				F9BAA3F6282A2C56008F21E6 /* DisabledDemo.swift in Sources */,
 				F9F6F35B281921B1003FD5E7 /* MoonshotContentView.swift in Sources */,
 				F9F8AB762833785900177C5C /* Singer+CoreDataClass.swift in Sources */,
@@ -956,6 +967,7 @@
 				F9F6F373281A641E003FD5E7 /* MissionView.swift in Sources */,
 				F927B7602817D68900637927 /* AddView.swift in Sources */,
 				F927B75E2817D1CE00637927 /* Expenses.swift in Sources */,
+				F9B8274A28406BC9005CD32A /* Location.swift in Sources */,
 				F927B75A2817D11400637927 /* CodableView.swift in Sources */,
 				F9F8AB772833785900177C5C /* Singer+CoreDataProperties.swift in Sources */,
 				F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */,
