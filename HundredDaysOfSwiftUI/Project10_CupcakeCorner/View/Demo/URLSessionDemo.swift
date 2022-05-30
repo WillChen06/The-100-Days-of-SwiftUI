@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct Response: Codable {
-    var results: [Result]
+    var results: [ResultDemo]
 }
 
-struct Result: Codable {
+struct ResultDemo: Codable {
     var trackId: Int
     var trackName: String
     var collectionName: String
 }
 
 struct URLSessionDemo: View {
-    @State private var results = [Result]()
+    @State private var results = [ResultDemo]()
     
     var body: some View {
         List(results, id: \.trackId) { item in

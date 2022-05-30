@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F903B36928446134008578C1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B36828446134008578C1 /* Result.swift */; };
 		F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC962820D4B300DC38AE /* DrawingContentView.swift */; };
 		F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC982820FB5E00DC38AE /* PathExample.swift */; };
 		F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9A282100D300DC38AE /* FlowerDemo.swift */; };
@@ -148,6 +149,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F903B36828446134008578C1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F90EFC962820D4B300DC38AE /* DrawingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingContentView.swift; sourceTree = "<group>"; };
 		F90EFC982820FB5E00DC38AE /* PathExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExample.swift; sourceTree = "<group>"; };
 		F90EFC9A282100D300DC38AE /* FlowerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDemo.swift; sourceTree = "<group>"; };
@@ -658,6 +660,7 @@
 			children = (
 				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
 				F9B8274D28407204005CD32A /* MapEditView.swift */,
+				F903B36828446134008578C1 /* Result.swift */,
 				F9B8274928406BC9005CD32A /* Location.swift */,
 				F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */,
 				F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */,
@@ -1010,6 +1013,7 @@
 				F9C0D465283E1DF00007C890 /* WriteDataToDocumentsDemo.swift in Sources */,
 				F9F6F371281A4497003FD5E7 /* Color-Theme.swift in Sources */,
 				F9C17084283F52F9000EB0B9 /* MapKitDemo.swift in Sources */,
+				F903B36928446134008578C1 /* Result.swift in Sources */,
 				F9EF99F928378688005DBC91 /* CachedUser+CoreDataClass.swift in Sources */,
 				F9EF99EA28376FD1005DBC91 /* FriendFaceDataController.swift in Sources */,
 				F9F8AB8B2835F5CF00177C5C /* User.swift in Sources */,
