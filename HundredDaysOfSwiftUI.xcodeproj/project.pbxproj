@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F903B36928446134008578C1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B36828446134008578C1 /* Result.swift */; };
+		F903B3802845B921008578C1 /* BucketList-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B37F2845B921008578C1 /* BucketList-ViewModel.swift */; };
+		F903B3822845BC63008578C1 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */; };
 		F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC962820D4B300DC38AE /* DrawingContentView.swift */; };
 		F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC982820FB5E00DC38AE /* PathExample.swift */; };
 		F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9A282100D300DC38AE /* FlowerDemo.swift */; };
@@ -150,6 +152,8 @@
 
 /* Begin PBXFileReference section */
 		F903B36828446134008578C1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F903B37F2845B921008578C1 /* BucketList-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BucketList-ViewModel.swift"; sourceTree = "<group>"; };
+		F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
 		F90EFC962820D4B300DC38AE /* DrawingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingContentView.swift; sourceTree = "<group>"; };
 		F90EFC982820FB5E00DC38AE /* PathExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExample.swift; sourceTree = "<group>"; };
 		F90EFC9A282100D300DC38AE /* FlowerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDemo.swift; sourceTree = "<group>"; };
@@ -660,6 +664,8 @@
 			children = (
 				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
 				F9B8274D28407204005CD32A /* MapEditView.swift */,
+				F903B37F2845B921008578C1 /* BucketList-ViewModel.swift */,
+				F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */,
 				F903B36828446134008578C1 /* Result.swift */,
 				F9B8274928406BC9005CD32A /* Location.swift */,
 				F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */,
@@ -949,6 +955,7 @@
 				F9F6F379281A794C003FD5E7 /* CrewMember.swift in Sources */,
 				F9F8AB7B283386A500177C5C /* DynamicallyFilteringDemo.swift in Sources */,
 				F9C0176428323A6B009E4078 /* HashableDemo.swift in Sources */,
+				F903B3822845BC63008578C1 /* FileManager-DocumentDirectory.swift in Sources */,
 				F9B8274828406A50005CD32A /* BiometricsLoginDemo.swift in Sources */,
 				F90EFCA728211B0900DC38AE /* SpirographDemo.swift in Sources */,
 				F9F6F36A281A3B99003FD5E7 /* Astronaut.swift in Sources */,
@@ -1025,6 +1032,7 @@
 				F9C0174C282CB598009E4078 /* DataController.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9F8AB832833881D00177C5C /* Candy+CoreDataProperties.swift in Sources */,
+				F903B3802845B921008578C1 /* BucketList-ViewModel.swift in Sources */,
 				F99F3D63283B61FC009106FA /* OnChangedDemo.swift in Sources */,
 				F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
