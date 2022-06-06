@@ -49,13 +49,13 @@ struct BucketListContentView: View {
                             viewModel.addLocation()
                         } label: {
                             Image(systemName: "plus")
+                                .padding()
+                                .background(.black.opacity(0.75))
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .clipShape(Circle())
+                                .padding(.trailing)
                         }
-                        .padding()
-                        .background(.black.opacity(0.75))
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .clipShape(Circle())
-                        .padding(.trailing)
                     }
                 }
             }
@@ -72,6 +72,11 @@ struct BucketListContentView: View {
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert("Auth Error", isPresented: $viewModel.showingAuthError) {
+                Button("Ok") { }
+            } message: {
+                Text(viewModel.authError?.localizedDescription ?? "Unknown issue")
+            }
         }
     }
 }

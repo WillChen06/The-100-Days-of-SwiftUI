@@ -1,5 +1,5 @@
 //
-//  BucketList-ViewModel.swift
+//  BucketListViewModel.swift
 //  HundredDaysOfSwiftUI
 //
 //  Created by WillChen on 2022/5/31.
@@ -17,6 +17,8 @@ extension BucketListContentView {
         
         @Published var selectedPlace: Location?
         @Published var isUnlocked = false
+        @Published var showingAuthError = false
+        @Published var authError: Error?
         
         let savePath = FileManager.documentDirectory.appendingPathComponent("SavedPlaces")
         
@@ -67,10 +69,15 @@ extension BucketListContentView {
                         }
                     } else {
                         // error
+                        Task { @MainActor in
+                            self.authError = authenticationError
+                            self.showingAuthError = true
+                        }
                     }
                 }
             } else {
-                
+                self.authError = error
+                self.showingAuthError = true
             }
         }
     }

@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F903B36928446134008578C1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B36828446134008578C1 /* Result.swift */; };
-		F903B3802845B921008578C1 /* BucketList-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B37F2845B921008578C1 /* BucketList-ViewModel.swift */; };
+		F903B3802845B921008578C1 /* BucketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B37F2845B921008578C1 /* BucketListViewModel.swift */; };
 		F903B3822845BC63008578C1 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */; };
+		F903B38B28470CDB008578C1 /* MapEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B38A28470CDB008578C1 /* MapEditViewModel.swift */; };
 		F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC962820D4B300DC38AE /* DrawingContentView.swift */; };
 		F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC982820FB5E00DC38AE /* PathExample.swift */; };
 		F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9A282100D300DC38AE /* FlowerDemo.swift */; };
@@ -152,8 +153,9 @@
 
 /* Begin PBXFileReference section */
 		F903B36828446134008578C1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		F903B37F2845B921008578C1 /* BucketList-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BucketList-ViewModel.swift"; sourceTree = "<group>"; };
+		F903B37F2845B921008578C1 /* BucketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewModel.swift; sourceTree = "<group>"; };
 		F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
+		F903B38A28470CDB008578C1 /* MapEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEditViewModel.swift; sourceTree = "<group>"; };
 		F90EFC962820D4B300DC38AE /* DrawingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingContentView.swift; sourceTree = "<group>"; };
 		F90EFC982820FB5E00DC38AE /* PathExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExample.swift; sourceTree = "<group>"; };
 		F90EFC9A282100D300DC38AE /* FlowerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDemo.swift; sourceTree = "<group>"; };
@@ -375,6 +377,45 @@
 				F9F6F357281912AD003FD5E7 /* View */,
 			);
 			path = Project7_iExpense;
+			sourceTree = "<group>";
+		};
+		F94E0276284DA09100148D10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F903B37F2845B921008578C1 /* BucketListViewModel.swift */,
+				F903B38A28470CDB008578C1 /* MapEditViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F94E0277284DA0A000148D10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F903B36828446134008578C1 /* Result.swift */,
+				F9B8274928406BC9005CD32A /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F94E0278284DA0A600148D10 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */,
+				F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */,
+				F9C0D462283E19D10007C890 /* ComparableDemo.swift */,
+				F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */,
+				F9C17081283F4F5E000EB0B9 /* StateWithEnumDemo.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F94E0279284DA0AD00148D10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
+				F9B8274D28407204005CD32A /* MapEditView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F97ED38827F2D2470033C15C = {
@@ -662,17 +703,11 @@
 		F9C0D45F283E10500007C890 /* Project14_BucketList */ = {
 			isa = PBXGroup;
 			children = (
-				F9C0D460283E10710007C890 /* BucketListContentView.swift */,
-				F9B8274D28407204005CD32A /* MapEditView.swift */,
-				F903B37F2845B921008578C1 /* BucketList-ViewModel.swift */,
 				F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */,
-				F903B36828446134008578C1 /* Result.swift */,
-				F9B8274928406BC9005CD32A /* Location.swift */,
-				F9B8274728406A50005CD32A /* BiometricsLoginDemo.swift */,
-				F9C17083283F52F9000EB0B9 /* MapKitDemo.swift */,
-				F9C0D462283E19D10007C890 /* ComparableDemo.swift */,
-				F9C0D464283E1DF00007C890 /* WriteDataToDocumentsDemo.swift */,
-				F9C17081283F4F5E000EB0B9 /* StateWithEnumDemo.swift */,
+				F94E0279284DA0AD00148D10 /* View */,
+				F94E0276284DA09100148D10 /* ViewModel */,
+				F94E0277284DA0A000148D10 /* Model */,
+				F94E0278284DA0A600148D10 /* Demo */,
 			);
 			path = Project14_BucketList;
 			sourceTree = "<group>";
@@ -1032,7 +1067,7 @@
 				F9C0174C282CB598009E4078 /* DataController.swift in Sources */,
 				F97ED39527F2D2470033C15C /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				F9F8AB832833881D00177C5C /* Candy+CoreDataProperties.swift in Sources */,
-				F903B3802845B921008578C1 /* BucketList-ViewModel.swift in Sources */,
+				F903B3802845B921008578C1 /* BucketListViewModel.swift in Sources */,
 				F99F3D63283B61FC009106FA /* OnChangedDemo.swift in Sources */,
 				F9BAA3F42828F99E008F21E6 /* AsyncImageDemo.swift in Sources */,
 				F9A576272810F9B000866612 /* AnimationsContentView.swift in Sources */,
@@ -1051,6 +1086,7 @@
 				F9F6F377281A784C003FD5E7 /* MissionGridView.swift in Sources */,
 				F9EF99E0283768E5005DBC91 /* FriendFace.xcdatamodeld in Sources */,
 				F99F3D61283B5A7C009106FA /* InstafilterContentView.swift in Sources */,
+				F903B38B28470CDB008578C1 /* MapEditViewModel.swift in Sources */,
 				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
 				F9F8AB8D28360D4200177C5C /* Friend.swift in Sources */,
