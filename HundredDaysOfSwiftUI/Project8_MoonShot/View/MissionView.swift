@@ -37,6 +37,7 @@ struct MissionView: View {
                         Text("Crew")
                             .font(.title.bold())
                             .padding(.bottom, 5)
+                            .accessibilityLabel("Crew")
                     }
                     .padding(.horizontal)
                     
@@ -108,6 +109,8 @@ struct ScrollableCrewView: View {
                             
                         }
                         .padding(.horizontal)
+                        .accessibilityElement(children: .ignore)
+                        .accessibility(label: Text(crewMember.astronaut.name + "," + crewMember.role))
                     }
                     
                 }

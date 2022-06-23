@@ -26,9 +26,13 @@ struct MissionListView: View {
                         Text(mission.displayName)
                             .font(.headline)
                             .foregroundColor(.white)
+                            .accessibility(label: Text(""))
+                            .accessibility(value: Text(mission.displayName))
                         Text(mission.formattedLaunchDate)
                             .font(.caption)
                             .foregroundColor(.white.opacity(0.5))
+                            .accessibility(label: Text(""))
+                            .accessibility(value: Text(mission.formattedLaunchDate))
                     }
                 }
             }.listRowBackground(Color.lightBackground)
