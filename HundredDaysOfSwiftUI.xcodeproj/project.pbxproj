@@ -11,6 +11,8 @@
 		F903B3802845B921008578C1 /* BucketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B37F2845B921008578C1 /* BucketListViewModel.swift */; };
 		F903B3822845BC63008578C1 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */; };
 		F903B38B28470CDB008578C1 /* MapEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903B38A28470CDB008578C1 /* MapEditViewModel.swift */; };
+		F9098EC2287D49F3006571A4 /* PersonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9098EC1287D49F3006571A4 /* PersonGridView.swift */; };
+		F9098EC4287D4A0D006571A4 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9098EC3287D4A0D006571A4 /* PersonDetailView.swift */; };
 		F90EFC972820D4B300DC38AE /* DrawingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC962820D4B300DC38AE /* DrawingContentView.swift */; };
 		F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC982820FB5E00DC38AE /* PathExample.swift */; };
 		F90EFC9B282100D300DC38AE /* FlowerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFC9A282100D300DC38AE /* FlowerDemo.swift */; };
@@ -27,6 +29,11 @@
 		F90EFCB428236A6700DC38AE /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCB328236A6700DC38AE /* Activities.swift */; };
 		F90EFCB728236D3C00DC38AE /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCB628236D3C00DC38AE /* AddActivityView.swift */; };
 		F90EFCB92823ACBB00DC38AE /* DetailActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EFCB82823ACBB00DC38AE /* DetailActivityView.swift */; };
+		F9168AA4287BF48B00495203 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9168AA3287BF48B00495203 /* Person.swift */; };
+		F9168AA6287BF54300495203 /* MeetupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9168AA5287BF54300495203 /* MeetupContentView.swift */; };
+		F9168AA8287BFD7700495203 /* MeetupAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9168AA7287BFD7700495203 /* MeetupAddView.swift */; };
+		F9168AAA287BFF0600495203 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9168AA9287BFF0600495203 /* People.swift */; };
+		F9168AAC287C12A400495203 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9168AAB287C12A400495203 /* ImageHelper.swift */; };
 		F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7512817987900637927 /* iExpenseContentView.swift */; };
 		F927B7542817C0A000637927 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7532817C09F00637927 /* DeleteView.swift */; };
 		F927B7562817C59D00637927 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927B7552817C59D00637927 /* AppStorageView.swift */; };
@@ -158,6 +165,8 @@
 		F903B37F2845B921008578C1 /* BucketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewModel.swift; sourceTree = "<group>"; };
 		F903B3812845BC63008578C1 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
 		F903B38A28470CDB008578C1 /* MapEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEditViewModel.swift; sourceTree = "<group>"; };
+		F9098EC1287D49F3006571A4 /* PersonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonGridView.swift; sourceTree = "<group>"; };
+		F9098EC3287D4A0D006571A4 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		F90EFC962820D4B300DC38AE /* DrawingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingContentView.swift; sourceTree = "<group>"; };
 		F90EFC982820FB5E00DC38AE /* PathExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExample.swift; sourceTree = "<group>"; };
 		F90EFC9A282100D300DC38AE /* FlowerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDemo.swift; sourceTree = "<group>"; };
@@ -174,6 +183,11 @@
 		F90EFCB328236A6700DC38AE /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		F90EFCB628236D3C00DC38AE /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		F90EFCB82823ACBB00DC38AE /* DetailActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActivityView.swift; sourceTree = "<group>"; };
+		F9168AA3287BF48B00495203 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F9168AA5287BF54300495203 /* MeetupContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupContentView.swift; sourceTree = "<group>"; };
+		F9168AA7287BFD7700495203 /* MeetupAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupAddView.swift; sourceTree = "<group>"; };
+		F9168AA9287BFF0600495203 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		F9168AAB287C12A400495203 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		F927B7512817987900637927 /* iExpenseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseContentView.swift; sourceTree = "<group>"; };
 		F927B7532817C09F00637927 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
 		F927B7552817C59D00637927 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
@@ -312,6 +326,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9098EC5287D4BEB006571A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9168AA3287BF48B00495203 /* Person.swift */,
+				F9168AA9287BFF0600495203 /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9098EC6287D4BF4006571A4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F9168AAB287C12A400495203 /* ImageHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F9098EC7287D4BFC006571A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9168AA5287BF54300495203 /* MeetupContentView.swift */,
+				F9098EC1287D49F3006571A4 /* PersonGridView.swift */,
+				F9098EC3287D4A0D006571A4 /* PersonDetailView.swift */,
+				F9168AA7287BFD7700495203 /* MeetupAddView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F90EFC932820D3BB00DC38AE /* Project9_Drawing */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +414,16 @@
 				F90EFCB82823ACBB00DC38AE /* DetailActivityView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F9168AA2287BF45100495203 /* Challenge6 */ = {
+			isa = PBXGroup;
+			children = (
+				F9098EC6287D4BF4006571A4 /* Helper */,
+				F9098EC5287D4BEB006571A4 /* Model */,
+				F9098EC7287D4BFC006571A4 /* View */,
+			);
+			path = Challenge6;
 			sourceTree = "<group>";
 		};
 		F927B750281797D700637927 /* Project7_iExpense */ = {
@@ -467,6 +519,7 @@
 				F99F3D5F283B5A63009106FA /* Project13_Instafilter */,
 				F9C0D45F283E10500007C890 /* Project14_BucketList */,
 				F9B0752128619AC200806AF5 /* Project15_Accessibility */,
+				F9168AA2287BF45100495203 /* Challenge6 */,
 				F97ED39827F2D2490033C15C /* Assets.xcassets */,
 				F97ED39A27F2D2490033C15C /* Preview Content */,
 			);
@@ -1019,7 +1072,9 @@
 				F90EFCA928224B7200DC38AE /* Challenge_AnimatableArrow.swift in Sources */,
 				F90EFCB02823698600DC38AE /* HabitTrackingContentView.swift in Sources */,
 				F9A576302812531000866612 /* EdutainmentContentView.swift in Sources */,
+				F9168AA6287BF54300495203 /* MeetupContentView.swift in Sources */,
 				F99F3D6B283B7CEE009106FA /* ImageSaver.swift in Sources */,
+				F9168AA4287BF48B00495203 /* Person.swift in Sources */,
 				F9EF99F728378688005DBC91 /* CachedFriend+CoreDataClass.swift in Sources */,
 				F99FC3FD2806740F0054CAF7 /* GuessTheFlagContentView.swift in Sources */,
 				F927B7582817C5C500637927 /* DismissView.swift in Sources */,
@@ -1028,6 +1083,7 @@
 				F927B7602817D68900637927 /* AddView.swift in Sources */,
 				F927B75E2817D1CE00637927 /* Expenses.swift in Sources */,
 				F9B8274A28406BC9005CD32A /* Location.swift in Sources */,
+				F9098EC4287D4A0D006571A4 /* PersonDetailView.swift in Sources */,
 				F927B75A2817D11400637927 /* CodableView.swift in Sources */,
 				F9F8AB772833785900177C5C /* Singer+CoreDataProperties.swift in Sources */,
 				F927B75C2817D18F00637927 /* ExpenseItem.swift in Sources */,
@@ -1047,6 +1103,7 @@
 				F99FC403280D0BE00054CAF7 /* RPSContentView.swift in Sources */,
 				F927B7542817C0A000637927 /* DeleteView.swift in Sources */,
 				F9C0175F28323680009E4078 /* CoreDataProject.xcdatamodeld in Sources */,
+				F9098EC2287D49F3006571A4 /* PersonGridView.swift in Sources */,
 				F9F8AB712833738A00177C5C /* MergePolicyDemo.swift in Sources */,
 				F90EFCAB28224C2600DC38AE /* Challenge_ColorCyclingRectangle.swift in Sources */,
 				F9F8AB792833794000177C5C /* FilteredList.swift in Sources */,
@@ -1062,10 +1119,12 @@
 				F9A5762B281105E000866612 /* StepperAnimation.swift in Sources */,
 				F9C0174E282CD5B7009E4078 /* StudentEntityDemo.swift in Sources */,
 				F9F6F36128192F9F003FD5E7 /* DecodableButton.swift in Sources */,
+				F9168AA8287BFD7700495203 /* MeetupAddView.swift in Sources */,
 				F9A57622280FA97100866612 /* WordScrambleContentView.swift in Sources */,
 				F9EF99FA28378688005DBC91 /* CachedUser+CoreDataProperties.swift in Sources */,
 				F9C0176128323773009E4078 /* Project12DataController.swift in Sources */,
 				F9F8AB812833881D00177C5C /* Country+CoreDataProperties.swift in Sources */,
+				F9168AAA287BFF0600495203 /* People.swift in Sources */,
 				F94216572861BA2B0029B9F5 /* AccessibilityLabelDemo.swift in Sources */,
 				F927B7522817987A00637927 /* iExpenseContentView.swift in Sources */,
 				F9C0D465283E1DF00007C890 /* WriteDataToDocumentsDemo.swift in Sources */,
@@ -1105,6 +1164,7 @@
 				F903B38B28470CDB008578C1 /* MapEditViewModel.swift in Sources */,
 				F9C0174A282CB52A009E4078 /* Bookworm.xcdatamodeld in Sources */,
 				F90EFCB428236A6700DC38AE /* Activities.swift in Sources */,
+				F9168AAC287C12A400495203 /* ImageHelper.swift in Sources */,
 				F9F8AB8D28360D4200177C5C /* Friend.swift in Sources */,
 				F99F3D67283B6BE0009106FA /* CoreImageDemo.swift in Sources */,
 				F90EFC992820FB5E00DC38AE /* PathExample.swift in Sources */,
